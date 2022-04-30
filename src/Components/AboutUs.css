@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@100&display=swap");
+
+*{
+    margin:0;
+
+}
+
+.aboutUsHeading{
+    font-family: 'Joyride';
+    font-weight: 400;
+    font-size: 1.5em;
+
+}
+
+.ImageDiv-neha{
+    display: flex;
+    justify-content: center;
+}
+/* !if size is greater than 990 px then add the required padding */
+
+img.About_Us_Robot-neha{   
+    padding-top:6em;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading2-neha{
+    font-family: 'GreyCliff', 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 15px 0 20px 0;
+    font-size:2em;
+}
+
+
+.aboutUsParaDiv{
+    margin: 0px;
+    padding: 6.6em 6em 6em 0em;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    text-align: left;   
+}
+
+.aboutUsPara{
+    font-family: 'GreyCliff','Poppins', sans-serif;
+    font-weight:100;
+    font-size: 1.1em;
+    color: #C9C9C9;
+}
+
+.About_Us_Robot-neha{
+    animation: up-down 1s ease-in-out infinite alternate-reverse both;
+    
+}
+
+img.About_Us_Robot-neha{
+    height:600;
+    width:400
+}
+
+@-webkit-keyframes up-down {
+    0% {
+        transform: translateY(30px);
+
+    }
+
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+svg.aboutUbutton-neha{
+    padding: 0px;
+    margin-top: 20px;
+}
+svg.aboutUs-Rect-neha{
+    padding: 0px;
+    margin-right: 0.5em;
+    margin-top: 0;
+}
+
+/* MediaQueries */
+@media only screen and (max-width: 767.33px) {
+    .AboutUs-Container{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    .ImageDiv-neha{
+        display:none;
+        visibility: hidden;
+    }
+
+    /* .AboutUs-Container .ImageDiv-neha{
+        order: 2;
+    }
+
+    .AboutUs-Container .aboutUsParaDiv{
+        order: 1;
+    } */
+
+    .aboutUsParaDiv{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .aboutUsHeading{
+        text-align:center;
+    }
+    
+    .heading2-neha{
+        text-align:center;
+    }
+
+    .aboutUsPara{
+        padding-left:10px;
+    }
+    .aboutUsButtonContainer{
+        text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .aboutUsParaDiv{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .aboutUsPara{
+        font-size: 1em;
+    }
+    .About_Us_Robot-neha{
+        width: 196px;
+        height: 344px;
+    }
+}

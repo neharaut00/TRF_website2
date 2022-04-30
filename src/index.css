@@ -1,13 +1,16 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+*{
+    margin: 0px;
+    margin-top: 0px;
+    padding: 0px;
+    background-color: #03090C;
+  }
+  
+  @font-face {
+    font-family: "Joyride";
+    src: url("./assets/fonts/Joyride Extended Typeface/Joyride-Regular.otf");
+    }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+    @font-face {
+      font-family: "GreyCliff";
+      src: url("./assets/fonts/Greycliff_CF/Greycliff v1.1w/OTF/GreycliffCF-Regular.otf");
+    }

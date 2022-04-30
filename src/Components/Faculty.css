@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@100&display=swap");
+
+*{
+    margin:0;    
+   
+}
+
+.Faculty-Container{   
+    padding-left: 250px;
+    padding-right:250px;
+    padding-top:30px;
+}
+
+.facultyHeading{
+    font-family: 'Joyride';
+    text-align: 'left';
+    font-size: 1.5em;
+}
+
+.FacultyImageDiv-neha{
+    display: flex;
+
+    
+}
+
+svg.faculty_bg{
+    padding:0;
+}
+
+p.heading2-neha{
+    font-family: 'GreyCliff' , 'Poppins', sans-serif;
+    font-weight:200;
+    font-size: 1rem;
+    padding-bottom: 20px;
+    padding-left: 0;
+    margin-bottom:0;
+    text-align: left;
+    justify-content: left;
+   
+}
+
+
+.facultyParaDiv{
+    margin-left: 0px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;    
+    color: white;
+}
+
+
+.slider {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    
+}
+  
+  
+svg.right-arrow {
+    padding: 0;
+    top: 50%;
+    right: 32px;
+    font-size: 2.5rem;
+    color: #A4E5E5;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    padding-left: 20px;
+}
+  
+svg.left-arrow {
+    padding: 0;
+    top: 50%;
+    left: 32px;
+    font-size: 2.5rem;
+    color: #A4E5E5;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    padding-right: 20px;
+}
+
+svg.arrow{
+    padding: 0;   
+}
+  
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+  
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
+
+.arrows_faculty-neha{
+    text-align: end;
+    padding-top: 20px;
+    
+}
+
+/* .facultyParaContent-neha{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
+} */
+
+.faculty_Content-neha{
+    padding-left: 0px;
+}
+
+.facultyPara{
+    font:'Joyride';
+    font-weight:200;
+    font-size: 1em;
+    padding:20px 0 50px 0;    
+}
+
+.slideno{
+    font-size: 2em;
+}
+
+@media only screen and (max-width: 1130px) {
+    .Faculty-Container{
+        padding-left: 150px;
+        padding-right: 150px;
+
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    .Faculty-Container{
+        padding-left: 110px;
+        padding-right: 110px;
+
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .Faculty-Container{
+        padding-left: 90px;
+        padding-right: 90px;
+
+    }
+    .faculty_bg{
+        width: 280px;
+        height: 380px;
+    }
+    
+}
+
+@media only screen and (max-width: 880px) {
+    .facultyPara{
+        font-size: 0.95em;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .faculty_Content-neha{
+        padding-left: 20px;
+    }
+    .faculty_bg{
+        width: 270px;
+        height: 370px;
+    }
+    .arrow{
+        height: 44px;
+        width: 32px;
+    }
+    .slideno{
+        font-size: 1.6em;
+    }
+    .arrows_faculty-neha{
+        padding-top: 0px;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 780px) {    
+        .Faculty-Container{
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+        .faculty_bg{
+            width: 260px;
+            height: 360px;
+        }
+        .heading2-neha{
+            text-align:'left';
+            justify-content: 'left';
+            font-size: 0.95rem;
+
+        }
+}
+
+@media only screen and (max-width: 768px){
+    
+
+    .facultyParaDiv{
+        padding-left: 2em;
+    }
+    .FacultyImageDiv-neha{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 730px){
+    .FacultyImageDiv-neha{
+        display: block;        
+        text-align: center;
+        justify-content: center;
+        text-align: center;
+        padding-left:150px;
+        padding-right:150px;
+        
+    }
+    .facultyParaDiv{
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .facultyHeading{
+        text-align: center;
+        font-size: 1.5em;
+        padding-top:10px;
+    }
+    p.heading2-neha{
+        text-align:center;
+    }
+    .arrows_faculty-neha{
+        text-align: center;
+        padding-top: 20px;
+        
+    }
+    .facultyParaDiv{
+        text-align:justify;
+    }
+}
+
+@media only screen and (min-width: 609px) and (max-width: 680px) {
+    .Faculty-Container{
+        padding-left: 50px;
+        padding-right:50px;
+    }
+	.FacultyImageDiv-neha{
+        display: block;        
+        justify-content: center;
+        text-align: center;
+        padding-left:0px;
+        padding-right:0px;        
+        
+    }
+    .facultyHeading{
+        text-align: left;
+        font-size: 1.2em;
+        padding-top:5px;
+    }
+    p.heading2-neha{
+        text-align:left;
+        padding-bottom: 10px;
+    }
+    .arrows_faculty-neha{
+        text-align: end;
+        padding-top: 0px;
+        
+    }
+    .facultyParaDiv{
+        text-align:justify;
+    }
+    .facultyPara{
+        text-align: left;
+        padding-bottom: 10px;
+        padding-top:0px;
+    }
+    .faculty_bg{
+        width: 240px;
+        height: 340px;
+    }
+}
+
+@media only screen and (max-width: 608px){
+    .FacultyImageDiv-neha{
+        display: block;        
+        justify-content: center;
+        text-align: center;
+        padding-left:20px;
+        padding-right:20px;        
+        
+    }
+    /* .faculty_bg{
+        width: 250px;
+        height: 350px;
+    } */
+    .arrows_faculty-neha{
+        text-align: center;
+        padding-top: 0px;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 520px){
+    .FacultyImageDiv-neha{
+        display: block;        
+        justify-content: center;
+        text-align: center;
+        padding-left:0px;
+        padding-right:0%;
+        
+        
+    }
+    .Faculty-Container{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .arrows_faculty-neha{
+        text-align: center;
+        padding-top: 0px;
+        
+    }
+}
+
+@media only screen and (max-width: 490px){
+    .Faculty-Container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+  
+}
+
+@media only screen and (max-width: 350px){
+    .faculty_bg{
+        width: 200px;
+        height: 300px;
+    }
+    .facultyHeading{
+        text-align: center;
+        font-size: 1.4em;
+        
+    }
+    .facultyPara{
+        font-size: 0.9em;
+    }
+}
