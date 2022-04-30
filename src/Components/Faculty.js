@@ -71,11 +71,10 @@ function Faculty() {
   }, [current]);
 
   return (
-    <section style={{backgroundColor:"#03090C", color:"white"}}>
+    <section className="Faculty-Container"style={{backgroundColor:"#03090C", color:"white"}}>
       
       {SliderData.map((slide, index) => {
         return (
-          <div className="Faculty-Container">
           <div
             className={index === current ? 'slide active' : 'slide'}
             key={index}
@@ -137,7 +136,7 @@ function Faculty() {
             </Row>
             )}
             </div>
-          </div>
+        
         );
       })}
       
