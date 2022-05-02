@@ -85,6 +85,8 @@ img.About_Us_Robot-neha{
 svg.aboutUbutton-neha{
     padding: 0px;
     margin-top: 20px;
+    width:210px;
+    height:77px;
 }
 svg.aboutUs-Rect-neha{
     padding: 0px;
@@ -93,15 +95,24 @@ svg.aboutUs-Rect-neha{
 }
 
 /* MediaQueries */
+@media only screen and (max-width: 950px){
+    svg.aboutUbutton-neha{        
+        width:200px;
+        height:67px;
+    }
+}
+
+
 @media only screen and (max-width: 767.33px) {
     .AboutUs-Container{
         display: flex;
-        flex-direction: column-reverse;
-
+        flex-direction: column-reverse;    
     }
+    
     .ImageDiv-neha{
         display:none;
-        visibility: hidden;
+        visibility: hidden; 
+        
     }
 
     /* .AboutUs-Container .ImageDiv-neha{
@@ -115,6 +126,9 @@ svg.aboutUs-Rect-neha{
     .aboutUsParaDiv{
         padding-left: 100px;
         padding-right: 100px;
+        
+        
+     
     }
     .aboutUsHeading{
         text-align:center;
@@ -143,5 +157,12 @@ svg.aboutUs-Rect-neha{
     .About_Us_Robot-neha{
         width: 196px;
         height: 344px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    svg.aboutUbutton-neha{        
+        width:190px;
+        height:57px;
     }
 }

@@ -43,7 +43,7 @@ function AboutUs() {
               </p>
             </div>
             <div className="aboutUsButtonContainer">
-                <svg className="aboutUbutton-neha" width="210" height="77" viewBox="0 0 210 77">
+                <svg className="aboutUbutton-neha" viewBox="0 0 210 77">
               {/* <a href="#"> */}                
                 <rect width={210} height={77} fill="#559083" /> 
 
