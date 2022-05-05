@@ -5,11 +5,21 @@
    
 }
 
+.arrows_faculty-neha{
+    text-align: end;
+    padding-top: 20px;
+    
+}
+
 .Faculty-Container{   
     padding-left: 250px;
     padding-right:250px;
     padding-top:100px;
     padding-bottom:100px;
+}
+
+.faculty_Content-neha{
+    padding-left: 0px;
 }
 
 .facultyHeading{
@@ -24,9 +34,22 @@
     
 }
 
-svg.faculty_bg{
-    padding:0;
+.facultyPara{
+    font:'Joyride';
+    font-weight:200;
+    font-size: 1em;
+    padding:20px 0 50px 0;    
 }
+
+.facultyParaDiv{
+    margin-left: 0px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;    
+    color: white;
+}
+
 
 p.heading2-neha{
     font-family: 'GreyCliff' , 'Poppins', sans-serif;
@@ -39,17 +62,10 @@ p.heading2-neha{
     justify-content: left;
    
 }
-
-
-.facultyParaDiv{
-    margin-left: 0px;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Poppins', sans-serif;    
-    color: white;
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
 }
-
 
 .slider {
     position: relative;
@@ -57,7 +73,36 @@ p.heading2-neha{
     display: flex;
     
 }
+
+.slideno{
+    font-size: 2em;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
+
+svg.arrow{
+    padding: 0;   
+}
   
+svg.faculty_bg{
+    padding:0;
+}
+
+svg.left-arrow {
+    padding: 0;
+    top: 50%;
+    left: 32px;
+    font-size: 2.5rem;
+    color: #A4E5E5;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    padding-right: 20px;
+}
   
 svg.right-arrow {
     padding: 0;
@@ -71,38 +116,6 @@ svg.right-arrow {
     padding-left: 20px;
 }
   
-svg.left-arrow {
-    padding: 0;
-    top: 50%;
-    left: 32px;
-    font-size: 2.5rem;
-    color: #A4E5E5;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-    padding-right: 20px;
-}
-
-svg.arrow{
-    padding: 0;   
-}
-  
-.slide {
-    opacity: 0;
-    transition-duration: 1s ease;
-}
-  
-.slide.active {
-    opacity: 1;
-    transition-duration: 1s;
-    transform: scale(1.08);
-}
-
-.arrows_faculty-neha{
-    text-align: end;
-    padding-top: 20px;
-    
-}
 
 /* .facultyParaContent-neha{
     display: flex;
@@ -111,20 +124,8 @@ svg.arrow{
     height: 300px;
 } */
 
-.faculty_Content-neha{
-    padding-left: 0px;
-}
+/* !Media Queries */
 
-.facultyPara{
-    font:'Joyride';
-    font-weight:200;
-    font-size: 1em;
-    padding:20px 0 50px 0;    
-}
-
-.slideno{
-    font-size: 2em;
-}
 
 @media only screen and (max-width: 1130px) {
     .Faculty-Container{
@@ -143,14 +144,15 @@ svg.arrow{
 }
 
 @media only screen and (max-width: 930px) {
+    .faculty_bg{
+        width: 280px;
+        height: 380px;
+    }
+    
     .Faculty-Container{
         padding-left: 90px;
         padding-right: 90px;
 
-    }
-    .faculty_bg{
-        width: 280px;
-        height: 380px;
     }
     
 }
@@ -162,58 +164,75 @@ svg.arrow{
 }
 
 @media only screen and (max-width: 830px) {
-    .faculty_Content-neha{
-        padding-left: 20px;
-    }
-    .faculty_bg{
-        width: 270px;
-        height: 370px;
-    }
     .arrow{
         height: 44px;
         width: 32px;
     }
-    .slideno{
-        font-size: 1.6em;
-    }
+
     .arrows_faculty-neha{
         padding-top: 0px;
         
     }
     
+    .faculty_bg{
+        width: 270px;
+        height: 370px;
+    }
+    
+    .faculty_Content-neha{
+        padding-left: 20px;
+    }
+
+    .slideno{
+        font-size: 1.6em;
+    }
+    
 }
 
 @media only screen and (max-width: 780px) {    
-        .Faculty-Container{
+    .faculty_bg{
+        width: 260px;
+        height: 360px;
+    }    
+    
+    .Faculty-Container{
             padding-left: 70px;
             padding-right: 70px;
         }
-        .faculty_bg{
-            width: 260px;
-            height: 360px;
-        }
-        .heading2-neha{
+    .heading2-neha{
             text-align:'left';
             justify-content: 'left';
             font-size: 0.95rem;
 
-        }
+    }
 }
 
 @media only screen and (max-width: 768px){
-    
+    .FacultyImageDiv-neha{
+        display: flex;
+        justify-content: center;
+    }    
 
     .facultyParaDiv{
         padding-left: 2em;
     }
-    .FacultyImageDiv-neha{
-        display: flex;
-        justify-content: center;
-    }
+    
 
 }
 
 @media only screen and (max-width: 730px){
+    .arrows_faculty-neha{
+        text-align: center;
+        padding-top: 20px;
+        
+    }
+    
+    .facultyHeading{
+        text-align: center;
+        font-size: 1.5em;
+        padding-top:10px;
+    }
+    
     .FacultyImageDiv-neha{
         display: block;        
         text-align: center;
@@ -228,29 +247,40 @@ svg.arrow{
         padding-left: 20px;
         padding-right: 20px;
     }
-    .facultyHeading{
-        text-align: center;
-        font-size: 1.5em;
-        padding-top:10px;
-    }
-    p.heading2-neha{
-        text-align:center;
-    }
-    .arrows_faculty-neha{
-        text-align: center;
-        padding-top: 20px;
-        
-    }
+    
     .facultyParaDiv{
         text-align:justify;
     }
+
+    p.heading2-neha{
+        text-align:center;
+    }
+    
 }
 
 @media only screen and (min-width: 609px) and (max-width: 680px) {
+    .arrows_faculty-neha{
+        text-align: end;
+        padding-top: 0px;
+        
+    }
+
+    .faculty_bg{
+        width: 240px;
+        height: 340px;
+    }
+    
     .Faculty-Container{
         padding-left: 50px;
         padding-right:50px;
     }
+
+    .facultyHeading{
+        text-align: left;
+        font-size: 1.2em;
+        padding-top:5px;
+    }
+
 	.FacultyImageDiv-neha{
         display: block;        
         justify-content: center;
@@ -259,35 +289,30 @@ svg.arrow{
         padding-right:0px;        
         
     }
-    .facultyHeading{
-        text-align: left;
-        font-size: 1.2em;
-        padding-top:5px;
-    }
-    p.heading2-neha{
-        text-align:left;
-        padding-bottom: 10px;
-    }
-    .arrows_faculty-neha{
-        text-align: end;
-        padding-top: 0px;
-        
-    }
+    
     .facultyParaDiv{
         text-align:justify;
     }
+
     .facultyPara{
         text-align: left;
         padding-bottom: 10px;
         padding-top:0px;
     }
-    .faculty_bg{
-        width: 240px;
-        height: 340px;
+    
+    p.heading2-neha{
+        text-align:left;
+        padding-bottom: 10px;
     }
 }
 
 @media only screen and (max-width: 608px){
+    .arrows_faculty-neha{
+        text-align: center;
+        padding-top: 0px;
+        
+    }
+    
     .FacultyImageDiv-neha{
         display: block;        
         justify-content: center;
@@ -300,15 +325,22 @@ svg.arrow{
         width: 250px;
         height: 350px;
     } */
+    
+    
+}
+
+@media only screen and (max-width: 520px){
     .arrows_faculty-neha{
         text-align: center;
         padding-top: 0px;
         
     }
-    
-}
 
-@media only screen and (max-width: 520px){
+    .Faculty-Container{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
     .FacultyImageDiv-neha{
         display: block;        
         justify-content: center;
@@ -318,15 +350,8 @@ svg.arrow{
         
         
     }
-    .Faculty-Container{
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    .arrows_faculty-neha{
-        text-align: center;
-        padding-top: 0px;
-        
-    }
+    
+    
 }
 
 @media only screen and (max-width: 490px){

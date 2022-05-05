@@ -7,29 +7,23 @@
     overflow: hidden;
 }
 
-svg.getintouch{
-    height: 301px;
-    width:251px;
-
-}
-
-svg.Sendbutton-neha{
-    width:210px;
-    height:77px;
+.contactUs-button{
+    display: block;
+    float: right;
+    padding-top: 30px;
 }
 
 .contactUs-row{
     padding: 100px 150px 50px 150px;
 }
 
-.image-col{
-    justify-content:left;
-    padding-top: 50px;
-
-}
 
 .form{
     padding-left: 100px;
+}
+
+.form-col{
+    padding: 0;
 }
 
 .form-heading{
@@ -38,15 +32,18 @@ svg.Sendbutton-neha{
 
 }
 
+form.form input[type="submit"] { display: none; float: right}
+
 .heading{
     font-family: 'Joyride';
     color: white;
     font-size:3em;
 }
-.subheading{
-    font-family: "GreyCliff";
-    font-size: 2.25em;
-    color: white;
+
+.image-col{
+    justify-content:left;
+    padding-top: 50px;
+
 }
 
 .input-field{
@@ -55,10 +52,6 @@ svg.Sendbutton-neha{
     border: none;
     color: white;
     
-}
-
-.form-col{
-    padding: 0;
 }
 
 input[type=email], textarea {
@@ -72,14 +65,24 @@ input[type=email], textarea {
     margin-bottom:16px;
 }
 
-
-form.form input[type="submit"] { display: none; float: right}
-
-.contactUs-button{
-    display: block;
-    float: right;
-    padding-top: 30px;
+.subheading{
+    font-family: "GreyCliff";
+    font-size: 2.25em;
+    color: white;
 }
+
+
+svg.getintouch{
+    height: 301px;
+    width:251px;
+
+}
+
+svg.Sendbutton-neha{
+    width:210px;
+    height:77px;
+}
+
 
 @media screen and (max-width: 1157px){
     .contactUs-row{
@@ -110,16 +113,16 @@ form.form input[type="submit"] { display: none; float: right}
 }
 
 @media screen and (max-width: 978px){
-    svg.getintouch{
-        height: 281px;
-        width:231px;
-    
-    }
     .heading{
         font-size:2.50em;
     }
     .subheading{
         font-size: 1.75em;
+    }
+    svg.getintouch{
+        height: 281px;
+        width:231px;
+    
     }
     svg.Sendbutton-neha{
         width:200px;
@@ -127,18 +130,23 @@ form.form input[type="submit"] { display: none; float: right}
     }
 }
 
+/* !Media Queries */
+
 @media screen and (max-width: 918px){
+    .heading{
+        font-size:2.25em;
+    }
+    
+    .subheading{
+        font-size: 1.50em;
+    }
+
     svg.getintouch{
         height: 261px;
         width:211px;
     
     }
-    .heading{
-        font-size:2.25em;
-    }
-    .subheading{
-        font-size: 1.50em;
-    }
+    
     svg.Sendbutton-neha{
         width:190px;
         height:57px;
@@ -146,18 +154,21 @@ form.form input[type="submit"] { display: none; float: right}
 }
 
 @media screen and (max-width: 858px){
+    .heading{       
+        font-size:2em;
+    }
+    
+    .subheading{
+        font-size: 1.25em;
+
+    }
+
     svg.getintouch{
         height: 241px;
         width:191px;
     
     }
-    .heading{       
-        font-size:2em;
-    }
-    .subheading{
-        font-size: 1.25em;
-
-    }
+    
     svg.Sendbutton-neha{
         width:160px;
         height:67px;
@@ -165,41 +176,57 @@ form.form input[type="submit"] { display: none; float: right}
 }
 
 @media screen and (max-width: 798px){
+    .heading{       
+        font-size:1.75em;
+    }
+    
+    .form{
+        font-size: 1em;
+    }
+
+    .subheading{
+        font-size: 1em;
+
+    }
+
     svg.getintouch{
         height: 221px;
         width:171px;
     
     }
-    .heading{       
-        font-size:1.75em;
-    }
-    .subheading{
-        font-size: 1em;
-
-    }
+    
     svg.Sendbutton-neha{
         width:140px;
         height:47px;
     }
-    .form{
-        font-size: 1em;
-    }
+    
 }
 
 @media screen and (max-width: 738px){
+    .form{
+        padding-left: 60px;
+    }
     svg.getintouch{
         height: 211px;
         width:161px;
     
     }
-    .form{
-        padding-left: 60px;
-    }
+    
 }
 
 @media screen and (max-width: 708px){
-    .image-col{
-        display: none;
+    .contactUs-button{
+        display: block;
+        float: left;
+        padding-top: 30px;
+    }
+
+    .contactUs-row{
+        padding: 100px 50px 50px 50px;
+       
+    }
+    .form{
+        padding-left: 50px;
     }
     .form-col{
         display:flex;
@@ -210,17 +237,8 @@ form.form input[type="submit"] { display: none; float: right}
         margin-bottom: 50px;
     
     }
-    .contactUs-row{
-        padding: 100px 50px 50px 50px;
-       
-    }
-    .form{
-        padding-left: 50px;
-    }
-    .contactUs-button{
-        display: block;
-        float: left;
-        padding-top: 30px;
+    .image-col{
+        display: none;
     }
     
 }
@@ -239,6 +257,10 @@ form.form input[type="submit"] { display: none; float: right}
 }
 
 @media screen and (max-width: 507px){
+    .form{
+        padding-left: 0px;
+    }
+   
     .heading{
         font-family: 'Joyride';
         color: white;
@@ -249,21 +271,18 @@ form.form input[type="submit"] { display: none; float: right}
         font-size: 1em;
         color: white;
     }
-    .form{
-        padding-left: 0px;
-    }
+    
 }
 
 @media screen and (max-width: 470px){
-    
+    .form{
+        padding-left: 0px;
+    }
+
     .form-col{
         display:block;
         justify-content: center;
     }
    
-    .form{
-        padding-left: 0px;
-    }
-    
     
 }
