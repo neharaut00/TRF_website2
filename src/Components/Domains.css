@@ -1,87 +1,51 @@
-.Electronics{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.Domains-Container{
+    text-align:center;
+    padding: 100px;
     position:relative;
-    right: 80px;
-    /* z-index:1; */
-
-}
-.Mechanics{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 80px;
-    top: -80px;
-    z-index: 1000;
-}
-.Software{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    right: 100px;
-    top: -150px;
-    z-index:2000;
 }
 
-.Domains{
-    margin: 50px 80px 0px 100px;
-    position: relative;
-}
-
-.Domain-content{
-    color: #c9c9c9;
-    font-family:"Greycliff";
-    font-size:0.8em;
-    text-align:right;
-    width:350px;
-    padding-left: 50px;
-    font-weight: 200;
-    
-}
-
-.Domain-heading{
+.Domain-heading-elex, .Domain-heading-mech, .Domain-heading-prog{
     color:white;
     font-family:"Joyride";
     font-size:2.25em;
-    text-align:left;
+    position: absolute;
 }
-.hexagon1{
-    padding-left:50px;
-    padding-right:20px;
-    padding-top:25px;
-    padding-bottom:25px;
-}
-
-.hexagon2{
-    padding-left:20px;
-    padding-right:50px;
-    padding-top:25px;
-    padding-bottom:25px;
-}
-.hexagon3{
-    padding-left:50px;
-    padding-right:20px;
-    padding-top:25px;
-    padding-bottom:25px;
-}
-
-.Mechanics>.Domain-content{
+.Domain-content-elex, .Domain-content-mech, .Domain-content-prog{
     color: #c9c9c9;
     font-family:"Greycliff";
     font-size:0.8em;
-    text-align:left;
-    padding-right: 60px;
-    padding-left: 0px;
     font-weight: 200;
+    width: 350px;
+    position:absolute;
 }
-.Mechanics>.Domain-heading{
-    color: #c9c9c9;
-    font-family:"Joyride";
-    text-align:right;
+
+.Domain-heading-elex{
+    right: 210px;
+    top: 200px;
+}
+.Domain-heading-mech{
+    left: 240px;
+    top: 350px;
+}
+.Domain-heading-prog{
+    right:240px;
+    bottom:190px;
+}
+.Domain-content-elex{
+    left: 30px;
+    top:190px;
+    text-align: right;
+    padding-left: 70px;
+}
+.Domain-content-mech{
+    right: 30px;
+    top: 330px;
+    text-align: left;
+    padding-right: 70px;
+}
+.Domain-content-prog{
+    left: 30px;
+    bottom: 170px;
+    text-align: right;
+    padding-left: 70px;
 }

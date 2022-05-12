@@ -11,7 +11,7 @@ const App = () => {
     <div style={{ margin: '0px', padding: '0px' }}>
       <Numbers />
       <AboutUs />
-      <Domains/>
+      <Domains />
       <Faculty />     
       <GetInTouch />
       
