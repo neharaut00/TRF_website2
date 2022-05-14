@@ -4,6 +4,7 @@
     position:relative;
 }
 
+
 .Domain-heading-elex, .Domain-heading-mech, .Domain-heading-prog{
     color:white;
     font-family:"Joyride";
@@ -21,6 +22,7 @@
 
 .Domain-heading-elex{
     right: 210px;
+    /* right: 17%; */
     top: 200px;
 }
 .Domain-heading-mech{

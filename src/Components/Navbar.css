@@ -1,0 +1,128 @@
+.Navbar{
+    display: flex;    
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
+    overflow: hidden;   
+    position:fixed;
+    background-color: none;    
+    width:100%;
+    z-index: 1;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* .Navbar-mobile{
+    display:none;
+} */
+
+.TRF-home{
+    font-family: 'Joyride';
+    font-weight:400;
+    color: white;
+    font-size:1.5em;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-decoration: none;
+}
+
+.TRF-home-mobile{
+    font-family: 'Joyride';
+    font-weight:400;
+    color: white;
+    font-size:1.5em;
+    text-align: left;
+    padding-left: 20px;
+    text-decoration: none;
+}
+.TRF-home-mobile:hover{
+    color: #A4E5E5;
+}
+
+.menu-btn{
+    text-align:end;
+}
+
+.nav-options{
+    font-family:'Greycliff';
+    font-weight:200;
+    color: white;
+    font-size: 1.05em;
+    padding-left:18px ;
+    padding-right: 18px;
+    padding-top: 3px;
+    text-decoration: none;
+}
+
+.nav-options:hover{
+    text-decoration: underline;
+    text-decoration-color: #A4E5E5;
+    color: white;
+    cursor: pointer;    
+
+}
+
+.TRF-home:hover{
+    color: #A4E5E5;
+}
+
+@media only screen and (max-width: 802px){
+    .nav-options{
+        font-size: 1em;
+    }
+    .TRF-home{
+        font-size: 1.45em;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .nav-options{
+        font-size: 0.95em;
+    }
+    .TRF-home{
+        font-size: 1.25em;
+    }
+}
+
+@media only screen and (max-width: 730px){
+    .TRF-home{
+        padding-left:30px;
+        padding-right: 30px;
+    }
+}
+@media only screen and (max-width: 700px){
+    .TRF-home{
+        padding-left:20px;
+        padding-right: 20px;
+    }
+    .nav-options{
+        font-size: 0.9em;
+        padding-top: 2px;
+    }
+}
+
+@media only screen and (max-width: 665px){
+    .TRF-home{
+       font-size: 1.15em;
+       padding-left:15px;
+       padding-right: 15px;
+    }
+    .nav-options{
+        font-size: 0.9em;
+        padding-top:0px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .Navbar{
+        /* visibility: hidden; */
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    .Navbar{
+        /* visibility: hidden; */
+        display: block;
+    }
+}
