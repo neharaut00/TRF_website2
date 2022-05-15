@@ -2,9 +2,12 @@
     overflow: hidden;
     padding-left: 100px;
     padding-right: 100px;
+    padding-bottom: 400px;
 }
 .year{
     font-size: 8em;
+    top:20%;
+    left:35%;
 }
 
 .achievement-row{
@@ -44,6 +47,108 @@
     opacity: 60%;
 }
 
-/* .competition-details{
+.competition-subheading{
     width: 250px;
-} */
+    
+}
+
+/*! Media Queries */
+ @media screen and (max-width: 1250px) {
+    .achievements{
+        /* padding-left: 80px; */
+        padding-right: 50px;
+    }
+ }
+ @media screen and (max-width: 1196px) {
+    .achievements{
+        padding-left: 50px;
+    }
+    .year{
+        left:30%;
+    }
+ }
+ @media screen and (max-width: 1196px) {
+    .year{
+        left:29%;
+    }
+ }
+ @media screen and (max-width: 1196px) {
+    .year{
+        left:28%;
+    }
+ }
+ @media screen and (max-width: 1196px) {
+    .achievements{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+ }
+
+ @media screen and (max-width: 1039px) {
+    .year{
+        font-size: 7.5em;
+        left: 29%;
+    }
+ }
+ @media screen and (max-width: 1020px) {
+    .year{
+        font-size: 7.2em;
+    }
+ }
+ @media screen and (max-width: 1000px) {
+    .year{
+        font-size: 7em;
+        left: 30%;
+       
+    }
+ }
+ @media screen and (max-width: 992px) {
+    .year{
+        font-size: 6.5em;        
+       
+    }
+    .competition-heading{
+        font-size: 2em;
+    }
+    
+    .competition-subheading{
+        font-size: 1.25em;        
+    }
+ }
+ @media screen and (max-width: 936px) {
+    .year{
+        font-size: 6.25em;        
+       
+    }
+    .competition-heading{
+        font-size: 1.75em;
+    }
+    
+    .competition-subheading{
+        font-size: 1em;        
+    }
+ }
+
+ @media screen and (max-width: 870px){
+    .year{
+        left:29%;
+    }
+ }
+
+ @media screen and (max-width: 850px){
+    .year{
+        font-size: 6em;
+        left:28%;
+    }
+    .achievements{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+ }
+
+ /* @media screen and (max-width: 825px){
+    .achievements-img{
+        display: none;
+    }
+ } */

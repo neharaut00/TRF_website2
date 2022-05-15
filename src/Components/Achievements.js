@@ -16,7 +16,7 @@ function Achievements() {
     const changeYear = () => {
         console.log(window.scrollY)
         if (window.scrollY > 3350) {
-            setYear("014");
+            setYear("016");
             // setYear(2009);
         }
         else if(window.scrollY > 3135) {
@@ -46,75 +46,75 @@ function Achievements() {
 
   return (
       <div className="achievements">
-          <h1 className="year" style={{ 'position': "fixed", 'backgroundColor': 'transparent', 'display': 'relative', "top": "35%", "left": "35%", "color": "white", "fontFamily": "Joyride" }}><span style={{ 'color': 'black', 'backgroundColor': 'transparent', 'textShadow': '1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 0.5px 0.5px #fff, -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff' }}>2</span>{year}</h1>          
+          <h1 className="year" style={{ 'position': "fixed", 'backgroundColor': 'transparent', 'display': 'relative', "color": "white", "fontFamily": "Joyride" }}><span style={{ 'color': 'black', 'backgroundColor': 'transparent', 'textShadow': '1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 0.5px 0.5px #fff, -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff' }}>2</span>{year}</h1>          
           <Row className="achievement-row">
               <Col>
-              <img src={A1} alt="Achievements" />
+              <img className="achievements-img" src={A1} alt="Achievements" />
               </Col>
-              <Col className="competition-container-left">
-              <div className="competition-details"> 
-                  <h2 className="competition-heading">ABU ROBOCON</h2>
-                  <p className="competition-subheading"><span style={{ color: "#559083" }}>|</span>Best Debutants, Quarter Finalists</p>
+              <Col className="competition-container-left" >
+                  <div className="competition-details" > 
+                  <h2 className="competition-heading" style={{'backgroundColor': 'transparent'}}>ABU ROBOCON</h2>
+                  <p className="competition-subheading" style={{'backgroundColor': 'transparent'}}><span style={{ color: "#559083" }}>|</span>Best Debutants, Quarter Finalists</p>
                 </div>
               </Col>
           </Row>
           <Row className="achievement-row">
               <Col className="competition-container-right">
               <div className="competition-details"> 
-                  <h2 className="competition-heading">ABU ROBOCON</h2>
-                  <p className="competition-subheading"><span style={{ color: "#559083" }}>|</span>Semifinalists</p>
+                  <h2 className="competition-heading" style={{'backgroundColor': 'transparent'}}>ABU ROBOCON</h2>
+                  <p className="competition-subheading" style={{'backgroundColor': 'transparent'}}><span style={{ color: "#559083" }}>|</span>Semifinalists</p>
                 </div>
               </Col>
-              <Col><img src={A2} alt="Achievements" /></Col>
+              <Col><img className="achievements-img" src={A2} alt="Achievements" /></Col>
           </Row>
           <Row className="achievement-row">
               <Col>
-              <img src={A3} alt="Achievements" />
+              <img className="achievements-img" src={A3} alt="Achievements" />
               </Col>
               <Col className="competition-container-left">
               <div className="competition-details"> 
-                  <h2 className="competition-heading">ABU ROBOCON</h2>
-                  <p className="competition-subheading"><span style={{ color: "#559083" }}>|</span>Runners Up, Best Autonomous Bot</p>
+                  <h2 className="competition-heading" style={{'backgroundColor': 'transparent'}}>ABU ROBOCON</h2>
+                  <p className="competition-subheading" style={{'backgroundColor': 'transparent'}}><span style={{ color: "#559083" }}>|</span>Runners Up, Best Autonomous Bot</p>
                 </div>
               </Col>
           </Row>
           <Row className="achievement-row">
               <Col className="competition-container-right">
               <div className="competition-details"> 
-                  <h2 className="competition-heading">ABU ROBOCON</h2>
-                  <p className="competition-subheading"><span style={{ color: "#559083" }}>|</span>Runners Up, Best Autonomous Bot</p>
+                  <h2 className="competition-heading" style={{'backgroundColor': 'transparent'}}>ABU ROBOCON</h2>
+                  <p className="competition-subheading" style={{'backgroundColor': 'transparent'}}><span style={{ color: "#559083" }}>|</span>Runners Up, Best Autonomous Bot</p>
                 </div>
               </Col>
-              <Col><img src={A4} alt="Achievements" /></Col>
+              <Col><img className="achievements-img" src={A4} alt="Achievements" /></Col>
           </Row>
           <Row className="achievement-row">
               <Col>
-              <img src={A5} alt="Achievements" />
+              <img className="achievements-img" src={A5} alt="Achievements" />
               </Col>
               <Col className="competition-container-left">
-              <div className="competition-details"> 
-                  <h2 className="competition-heading">ABU ROBOCON</h2>
-                  <p className="competition-subheading"><span style={{ color: "#559083" }}>|</span>Quarter Finalist</p>
+              <div className="competition-details" > 
+                  <h2 className="competition-heading" style={{'backgroundColor': 'transparent'}}>ABU ROBOCON</h2>
+                  <p className="competition-subheading" style={{'backgroundColor': 'transparent'}}><span style={{ color: "#559083" }}>|</span>Quarter Finalist</p>
                 </div>
               </Col>
           </Row>
           <Row className="achievement-row">
               <Col className="competition-container-right">
               <div className="competition-details"> 
-                  <h2 className="competition-heading">ABU ROBOCON</h2>
-                  <p className="competition-subheading"><span style={{ color: "#559083" }}>|</span>Semi Finalist, Best Manual Operator</p>
+                  <h2 className="competition-heading" style={{'backgroundColor': 'transparent'}}>ABU ROBOCON</h2>
+                  <p className="competition-subheading" style={{'backgroundColor': 'transparent'}}><span style={{ color: "#559083" }}>|</span>Semi Finalist, Best Manual Operator</p>
                 </div>
               </Col>
-              <Col><img src={A61} alt="Achievements" /></Col>
+              <Col><img className="achievements-img" src={A61} alt="Achievements" /></Col>
           </Row>
           <Row className="achievement-row">
               <Col>
-              <img src={A7} alt="Achievements" />
+              <img className="achievements-img" src={A7} alt="Achievements" />
               </Col>
               <Col className="competition-container-left">
               <div className="competition-details"> 
-                  <h2 className="competition-heading">ABU ROBOCON</h2>
-                  <p className="competition-subheading"><span style={{ color: "#559083" }}>|</span>ABU ROBOCON Runners up,
+                  <h2 className="competition-heading" style={{'backgroundColor': 'transparent'}}>ABU ROBOCON</h2>
+                  <p className="competition-subheading" style={{'backgroundColor': 'transparent'}}><span style={{ color: "#559083" }}>|</span>ABU ROBOCON Runners up,
 Best Autonomous Bot</p>
                 </div>
               </Col>
@@ -122,11 +122,11 @@ Best Autonomous Bot</p>
           <Row className="achievement-row">
               <Col className="competition-container-right">
               <div className="competition-details"> 
-                  <h2 className="competition-heading">ABU ROBOCON</h2>
-                  <p className="competition-subheading"><span style={{ color: "#559083" }}>|</span>AIR 10</p>
+                  <h2 className="competition-heading" style={{'backgroundColor': 'transparent'}}>ABU ROBOCON</h2>
+                  <p className="competition-subheading" style={{'backgroundColor': 'transparent'}}><span style={{ color: "#559083" }}>|</span>AIR 10</p>
                 </div>
               </Col>
-              <Col><img src={A81} alt="Achievements" /></Col>
+              <Col><img className="achievements-img" src={A81} alt="Achievements" /></Col>
           </Row>
           
     </div>
