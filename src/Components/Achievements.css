@@ -1,0 +1,49 @@
+.achievements{
+    overflow: hidden;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.year{
+    font-size: 8em;
+}
+
+.achievement-row{
+    padding-bottom: 100px;
+}
+
+.competition-container-left{
+    display: flex;  
+    align-items:flex-end;
+    justify-content:right;
+    padding-right: 25px;    
+    padding-bottom: 80px;
+    text-align: right;    
+}
+
+.competition-container-right{
+    display: flex;  
+    align-items:flex-end;
+    justify-content:left;
+    padding-left: 25px;    
+    padding-bottom: 80px;
+    text-align: left;    
+}
+
+.competition-heading{
+    font-family: "Greycliff";
+    font-weight: 600;
+    font-size: 2.25em;
+    color: white;
+}
+
+.competition-subheading{
+    font-family: "Greycliff";
+    font-weight: 600;
+    font-size: 1.5em;
+    color: white;
+    opacity: 60%;
+}
+
+/* .competition-details{
+    width: 250px;
+} */

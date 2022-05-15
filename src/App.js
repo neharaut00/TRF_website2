@@ -5,16 +5,18 @@ import Numbers from './Components/Numbers.js'
 import GetInTouch from './Components/GetInTouch.js'
 import Domains from './Components/Domains.js'
 // import NavBar from './Components/NavBar.js'
+import Achievements from './Components/Achievements.js'
 
 const App = () => {
   return (
     <div style={{ margin: '0px', padding: '0px' }}>
       {/* <NavBar/> */}
-      <Numbers />
+      {/* <Numbers />
       <AboutUs />
       <Domains />
       <Faculty />     
-      <GetInTouch />
+      <GetInTouch /> */}
+      <Achievements />
       
     </div>
   )
