@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.maindiv{
+    background:black;
+    padding-top:2rem;
+}
+.footertrflogo{
+    font-family: trfFont;
+    font-weight: 400;
+    color: white;
+    font-size: 2.5rem;
+}
+.Footertextcolor{
+    font-family: trfFont1;
+    font-weight: 400;
+    color: rgb(170, 169, 169);
+    font-size:1.1rem;
+}
+.footerheading2{
+    font-family: trfFont1;
+    font-weight: 400;
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom:1rem;
+}
+.footerheading1{
+    font-family: trfFont1;
+    font-weight: 400;
+    color: white;
+    font-size: 1.2rem;
+}
+.footsec2{
+    display: flex;
+    justify-content: space-between;
+    margin-top:3rem;
+    
+}
+.section{
+    padding :0rem 4rem;
+}
+hr{
+    width: 2.5rem;
+   border: 0.5px solid rgb(127, 127, 127);
+    margin-bottom: 1rem;
+}
+.footercopyright{
+    font-family: trfFont1;
+    font-weight: 400;
+    color: white;
+    padding: 3rem 4rem;
+    font-size: 0.7rem;
+}
+.alink{
+    font-family: trfFont1;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(242, 242, 242);
+    font-size:1.2rem;
+}
+.alink:hover{
+    cursor: pointer;
+    color: rgb(191, 191, 191);
+}
+.alinkspace{
+    font-family: trfFont1;
+    font-weight: 400;
+    margin-right: 1rem;
+}
+
+.linksgrp2{
+    font-family: trfFont1;
+    font-weight: 400;
+    margin-top: 1.5rem;
+}
+.linksgrp1{
+    font-family: trfFont1;
+    font-weight: 400;
+    margin-top: 3rem;
+}
+
+.trfmail{
+    font-family: trfFont1;
+    font-weight: 400;
+    margin-bottom: 0.7rem;
+}
+.trfmoblieno{
+    font-family: trfFont1;
+    font-weight: 400;
+    margin-bottom: 0.7rem;
+}
+
+@media only screen and (max-width: 780px) {
+    .footsec2{
+        display: flex;
+        flex-direction: column;
+        margin-top:3rem;   
+    }
+  }
+
+  @media only screen and (max-width: 400px) { 
+    #facebooklink{
+        
+    position: relative;
+    top: 1rem;
+    }
+  }

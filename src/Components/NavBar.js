@@ -1,65 +1,90 @@
 import React, { useState }  from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  Nav,
-  NavItem,
-} from 'reactstrap';
-// import trfLogoNavbar from '../Resources/trf-logo-navbar.png'
+// import {
+//   Collapse,
+//   Navbar,
+//   NavbarToggler,
+//   Nav,
+//   NavItem,
+// } from 'reactstrap';
+import hamburger_icon from '../assets/hamburger_icon.png'
 
-const NavBar=(props)=> {
-  const [isOpen, setIsOpen] = useState(false);
+function NavBar() {
+  const [active, setActive] = useState("nav__menu");
+  const [icon, setIcon] = useState("nav__toggler");
+  const navToggle = () => {
+    if (active === "nav__menu") {
+      setActive("nav__menu nav__active");
+    } else setActive("nav__menu");
 
-  const toggle = () => setIsOpen(!isOpen);
+    // Icon Toggler
+    if (icon === "nav__toggler") {
+      setIcon("nav__toggler toggle");
+    } else setIcon("nav__toggler");
+  };
   return (
-      <div>
-          {/* <div className="Navbar">
-          <a className='nav-options' href='#'>Robocon</a>
-          <a className='nav-options' href='#'>Achievements</a>
-          <a className='nav-options' href='#'>Blogs</a>
-          <a className='TRF-home' href='#'>TRF</a>
-          <a className='nav-options' href='#'>Projects</a>
-          <a className='nav-options' href='#'>Events</a>
-          <a className='nav-options' href='#'>Workshops</a>
-          </div>
-          <div className="Navbar-mobile">
-        <a className='TRF-home-mobile' href='#'>TRF</a> */}
-        <Navbar style={{backgroundColor: "#000517"}} className="NavBarMainDiv" expand="md">        
-        <NavbarToggler className="navBarToggleMenu" onClick={toggle}>
-            H
-        </NavbarToggler>
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto" navbar>
-            <NavItem className="navBarItem">
-                <Link className="navBarTabs" to="/" style={{marginRight: "65px"}}>Alumni</Link>
-            </NavItem>
-            <NavItem className="navBarItem">
-                <Link className="navBarTabs" to="/" style={{marginRight: "65px"}}>Achievements</Link>
-            </NavItem>
-            <NavItem className="navBarItem">
-                <Link className="navBarTabs" to="/" style={{marginRight: "65px"}}>Team</Link>
-            </NavItem>
-            <NavItem>
-            <Link to="/">TRF</Link>
-            </NavItem>
-            <NavItem className="navBarItem">
-                <Link className="navBarTabs" to="/" style={{marginRight: "65px"}}>Projects</Link>
-            </NavItem>
-            <NavItem className="navBarItem">
-                <Link className="navBarTabs" to="/" style={{marginRight: "65px"}}>Blog</Link>
-            </NavItem>
-            <NavItem className="navBarItem">
-                <Link className="navBarTabs" to="/" style={{marginRight: "10px"}}>Developer’s Page</Link>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar>
-
-    </div>
-  )
+    <div className="Navbar" >
+    <nav className="nav">
+      <Link to="/" className="nav__brand_mobile">
+        TRF
+      </Link>      
+      <ul className={active}>
+        <li className="nav__item">
+          <Link to="/" className="nav__link">
+            Roboccon
+          </Link>
+        </li>
+        <li className="nav__item">
+          <Link to="/achievements" className="nav__link">
+            Achievements
+          </Link>
+        </li>
+        <li className="nav__item">
+          <Link to="/" className="nav__link">
+            Blogs
+          </Link>
+        </li>
+        <Link to="/" className="nav__brand">
+        TRF
+      </Link>   
+        <li className="nav__item">
+          <Link to="/" className="nav__link">
+            Projects
+          </Link>
+        </li>
+        <li className="nav__item">
+          <Link to="/" className="nav__link">
+            Events
+          </Link>
+        </li>
+        <li className="nav__item">
+          <Link to="/" className="nav__link">
+            Workshops
+          </Link>
+        </li>
+      </ul>
+      <div onClick={navToggle} className={icon} >
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
+        {/* <img src={hamburger_icon} alt="logo" /> */}
+      </div>
+      </nav>
+      </div>
+  );
 }
+
+
+// const NavBar=(props)=> {
+//   const [isOpen, setIsOpen] = useState(false);
+
+//   const toggle = () => setIsOpen(!isOpen);
+//   return (
+//       <div>
+         
+//     </div>
+//   )
+// }
 
 export default NavBar
