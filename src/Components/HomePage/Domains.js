@@ -1,5 +1,5 @@
 import React from 'react';
-import Group from '../assets/Group.png';
+import Group from '../../assets/Group.png';
 import './Domains.css'
 
 function Domains() {

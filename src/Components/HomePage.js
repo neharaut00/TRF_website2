@@ -1,9 +1,9 @@
 import React from 'react'
-import Numbers from '../Numbers.js'
-import AboutUs from '../AboutUs.js'
-import Domains from '../Domains.js'
-import Faculty from '../Faculty.js'
-import GetInTouch from '../GetInTouch'
+import Numbers from './HomePage/Numbers.js'
+import AboutUs from './HomePage/AboutUs.js'
+import Domains from './HomePage/Domains.js'
+import Faculty from './HomePage/Faculty.js'
+import GetInTouch from './HomePage/GetInTouch'
 import './HomePage.css'
 
 function HomePage() {

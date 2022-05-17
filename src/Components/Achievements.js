@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './Achievements.css'
 import {Row, Col} from 'react-bootstrap'
 import A1 from '../assets/Achievements_images/A1.png'
@@ -12,6 +12,27 @@ import A81 from '../assets/Achievements_images/A8.1.png'
 
 function Achievements() {    
     const [year, setYear] = useState("007");
+    const [isVisible, setIsVisible] = useState(true);
+  const [height, setHeight] = useState(0)
+  
+  useEffect(() => {   
+    window.addEventListener("scroll", listenToScroll);
+    return () => 
+       window.removeEventListener("scroll", listenToScroll); 
+  }, [])
+  
+  const listenToScroll = () => {
+    let heightToHideFrom = 3700;
+    const winScroll = document.body.scrollTop || 
+        document.documentElement.scrollTop;
+    setHeight(winScroll);
+
+    if (winScroll > heightToHideFrom) {  
+         isVisible && setIsVisible(false);
+    } else {
+         setIsVisible(true);
+    }  
+  };
 
     const changeYear = () => {
         console.log(window.scrollY)
@@ -46,7 +67,17 @@ function Achievements() {
 
   return (
       <div className="achievements">
-          <h1 className="year" style={{ 'position': "fixed", 'backgroundColor': 'transparent', 'display': 'relative', "color": "white", "fontFamily": "Joyride" }}><span style={{ 'color': 'black', 'backgroundColor': 'transparent', 'textShadow': '1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 0.5px 0.5px #fff, -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff' }}>2</span>{year}</h1>          
+          {
+              isVisible 
+              && 
+          <h1 className="year" style={{ 'position': "fixed", 'backgroundColor': 'transparent', 'display': 'relative', "color": "white", "fontFamily": "Joyride" }}>
+              <div id= "hide" style={{ 'display': 'inline-block','color': 'black', 'backgroundColor': 'transparent', 'textShadow': '1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 0.5px 0.5px #fff, -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff' }}>
+                  2
+              </div>
+             
+                  {year}   
+            </h1>   
+            }       
           <Row className="achievement-row">
               <Col>
               <img className="achievements-img" src={A1} alt="Achievements" />

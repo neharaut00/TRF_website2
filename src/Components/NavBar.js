@@ -1,14 +1,6 @@
 import React, { useState }  from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom';
-// import {
-//   Collapse,
-//   Navbar,
-//   NavbarToggler,
-//   Nav,
-//   NavItem,
-// } from 'reactstrap';
-import hamburger_icon from '../assets/hamburger_icon.png'
 
 function NavBar() {
   const [active, setActive] = useState("nav__menu");
@@ -31,7 +23,7 @@ function NavBar() {
       </Link>      
       <ul className={active}>
         <li className="nav__item">
-          <Link to="/" className="nav__link">
+          <Link to="/roboccon" className="nav__link">
             Roboccon
           </Link>
         </li>
@@ -41,7 +33,7 @@ function NavBar() {
           </Link>
         </li>
         <li className="nav__item">
-          <Link to="/" className="nav__link">
+          <Link to="/blogs" className="nav__link">
             Blogs
           </Link>
         </li>
@@ -49,17 +41,17 @@ function NavBar() {
         TRF
       </Link>   
         <li className="nav__item">
-          <Link to="/" className="nav__link">
+          <Link to="/projects" className="nav__link">
             Projects
           </Link>
         </li>
         <li className="nav__item">
-          <Link to="/" className="nav__link">
+          <Link to="/events" className="nav__link">
             Events
           </Link>
         </li>
         <li className="nav__item">
-          <Link to="/" className="nav__link">
+          <Link to="/workshops" className="nav__link">
             Workshops
           </Link>
         </li>

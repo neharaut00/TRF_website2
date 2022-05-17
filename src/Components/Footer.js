@@ -19,7 +19,7 @@ function Footer() {
             <hr />
             <p className="Footertextcolor trfmoblieno">+91 9096938465</p>
             
-            <p className="Footertextcolor trfmail">Robotics.forum@vit.edu</p>
+            <p className="Footertextcolor trfmail">robotics.forum@vit.edu</p>
             
             <p className="Footertextcolor">
               666,Upper Indira Nagar,Bibwewadi,Pune.

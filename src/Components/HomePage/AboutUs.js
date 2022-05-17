@@ -1,5 +1,5 @@
 import React from 'react'
-import image from "../assets/AboutUsRobot.png";
+import image from "../../assets/AboutUsRobot.png";
 import Tilt from "react-tilt";
 import './AboutUs.css';
 import { Row, Col} from 'react-bootstrap';

@@ -1,9 +1,8 @@
 import React, {useState} from 'react'
 import './Faculty.css';
 import { Row, Col } from 'react-bootstrap';
-// import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import image from '../assets/faculty.png';
+import image from '../../assets/faculty.png';
 import { useEffect } from 'react';
 
 
@@ -17,7 +16,7 @@ function Faculty() {
       id: '01'
     },
     {
-      image: require('../assets/images.jfif'),
+      image: require('../../assets/images.jfif'),
       facultyName: 'prOf. (dr.) g. n. kotwal',
       designation: 'Asscociate Professor and head',
       about: 'Prof. H. M. Khare is an Associate Professor and Head of Electrical Dept. with a teaching and industry experience of 29 years. His areas of specialization are Control Systems, Automation & Robotics',
@@ -102,7 +101,7 @@ function Faculty() {
               <Col className="faculty_Content-neha"  >
                 <div className="facultyParaDiv">
                   <h3 className="facultyHeading"><span style={{ color: "#559083" }}>|</span>  {slide.facultyName}
-                      <p className="heading2-neha">{slide.designation}</p>
+                      <p className="facultyheading2-neha">{slide.designation}</p>
                   </h3>
                   <div  className="facultyParaContent-neha">
                   <div className="facultyPara" style={{ paddingTop: "15px" }}>
