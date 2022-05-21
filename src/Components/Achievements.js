@@ -22,7 +22,7 @@ function Achievements() {
   }, [])
   
   const listenToScroll = () => {
-    let heightToHideFrom = 3700;
+    let heightToHideFrom = 4268;
     const winScroll = document.body.scrollTop || 
         document.documentElement.scrollTop;
 
@@ -35,23 +35,23 @@ function Achievements() {
 
     const changeYear = () => {
         console.log(window.scrollY)
-        if (window.scrollY > 3350) {
+        if (window.scrollY > 3900) {
             setYear("016");
             // setYear(2009);
         }
-        else if(window.scrollY > 3135) {
+        else if(window.scrollY > 3535) {
             setYear("013");
         }
-        else if(window.scrollY > 2648) {
+        else if(window.scrollY > 3000) {
             setYear("012");
         }
-        else if(window.scrollY > 1960){
+        else if(window.scrollY > 2260){
             setYear("011");
         }
-        else if(window.scrollY > 1373){
+        else if(window.scrollY > 1630){
             setYear("010");
         }
-        else if(window.scrollY > 916){
+        else if(window.scrollY > 1130){
             setYear("009");
         }
         else if(window.scrollY > 436){
