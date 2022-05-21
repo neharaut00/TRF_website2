@@ -1,0 +1,41 @@
+.Workshop{
+    position: relative;
+}
+
+.Workshop-img{
+    position: absolute;
+    right:0;
+    /* top: -150px; */
+    top: -20px;
+    background-color:transparent;
+    z-index: 3000;
+}
+
+.Workshop-text-container{
+    padding-top: 360px;
+    padding-left: 100px;
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: flex-start;
+    align-items: left;
+    z-index: 1000;
+}
+
+.Workshop-main-heading{
+    font-family: "Joyride";
+    font-size: 6em;
+    font-weight: 400;
+    color: white;
+
+}
+
+.Workshop-subheading{
+    font-family: "Greycliff";
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+    width: 55%;
+    padding-left: 10px;
+    border-left: 5px solid #559083;
+    opacity: 60%;
+}

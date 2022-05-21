@@ -266,20 +266,264 @@
 }
 
 @media screen and (max-width: 912px){
+    .Domains-Container{
+        position: static;
+        padding: 100px 70px 100px 70px;
+        display: flex;
+        flex-direction: column;
+    }
     .domain-img{
         display: none;
     }
-    .Domain-content-elex, .Domain-content-mech, .Domain-content-prog{
+    .Domain-content-elex, .Domain-content-prog{
         position: static;
         padding: 0px;
-        margin-left: 0px;
+        margin: 0px;
+        width: 100%;
+        text-align: inherit;
+        padding-right: 400px;
     }
+    
+    .Domain-content-mech{
+        position: static;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        text-align: inherit;
+        padding-left: 400px;
+    }
+
     .Domain-heading-elex, .Domain-heading-mech, .Domain-heading-prog{
         position: static;
     }
+    .Elex-domain, .Prog-domain{
+        /* display: flex;
+        flex-direction: column; */
+        /* justify-content:flex-start; */
+        align-items: left;
+        text-align: left;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        /* width: 50%; */
+    }
+    
+    .Mech-domain{
+        /* display: flex;
+        flex-direction: column; */
+        /* justify-content:flex-end; */
+        align-items: right;
+        text-align: right;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        /* width: 50%; */
+    }
+
+    .Domains-Container{        
+        position:relative;       
+
+     }     
+     .Domains-Container::before{
+        content: '';
+        background-image: url('../../assets/Group.png');        
+        background-size: contain;
+        background-repeat: no-repeat;        
+        position: absolute;
+        color: white;
+        width: 100%;  
+        top: 0px;
+        right: 25%;
+        bottom: 0px;
+        left: 20%;
+        opacity: 0.3;
+     }
+        
+
 }
 
 /* after 912 this image will go and background image will come */
+@media screen and (max-width: 824px){
+    .Domains-Container::before{
+        content: '';
+        background-image: url('../../assets/Group.png');        
+        background-size: contain;
+        background-repeat: no-repeat;        
+        position: absolute;
+        color: white;
+        width: 100%;  
+        top: 0px;
+        right: 0%;
+        bottom: 0px;
+        left: 15%;
+        opacity: 0.3;
+     }
+     .Domain-content-elex, .Domain-content-prog{
+         padding-right: 300px;
+     }
+     .Domain-content-mech{
+        padding-left: 300px;
+    }
+}
+
+@media screen and (max-width: 710px){
+    .Domains-Container::before{
+        content: '';
+        background-image: url('../../assets/Group.png');        
+        background-size: contain;
+        background-repeat: no-repeat;        
+        position: absolute;
+        color: white;
+        width: 100%;  
+        top: 0px;
+        right: 0%;
+        bottom: 0px;
+        left: 7%;
+        opacity: 0.3;
+     }
+     .Domain-content-elex, .Domain-content-prog{
+         padding-right: 200px;
+     }
+     .Domain-content-mech{
+        padding-left: 200px;
+    }
+}
+@media screen and (max-width: 630px){
+    .Domains-Container::before{
+        content: '';
+        background-image: url('../../assets/Group.png');        
+        background-size: contain;
+        background-repeat: no-repeat;        
+        position: absolute;
+        color: white;
+        width: 100%;  
+        top: 0px;
+        right: 0%;
+        bottom: 0px;
+        left: 3%;
+        opacity: 0.3;
+     }
+     .Domain-content-elex, .Domain-content-prog{
+         padding-right: 200px;
+     }
+     .Domain-content-mech{
+        padding-left: 200px;
+    }
+}
+@media screen and (max-width: 610px){
+    .Domains-Container{
+        padding: 100px 30px 100px 30px; 
+    }
+    .Domains-Container::before{
+        content: '';
+        background-image: url('../../assets/Group.png');        
+        background-size: contain;
+        background-repeat: no-repeat;        
+        position: absolute;
+        color: white;
+        width: 100%;  
+        top: 0px;
+        right: 0%;
+        bottom: 0px;
+        left:6%;
+        opacity: 0.3;
+     }
+     .Domain-content-elex, .Domain-content-prog{
+         padding-right: 100px;
+     }
+     .Domain-content-mech{
+        padding-left: 100px;
+    }
+}
+
+@media screen and (max-width: 560px){    
+    .Domains-Container::before{
+        content: '';
+        background-image: url('../../assets/Group.png');        
+        background-size: contain;
+        background-repeat: no-repeat;        
+        position: absolute;
+        color: white;
+        width: 100%;  
+        top: 0px;
+        right: 0%;
+        bottom: 0px;
+        left:0%;
+        opacity: 0.3;
+     }
+     .Mech-domain, .Elex-domain, .Prog-domain{
+         padding-top: 30px;
+     }
+     
+}
+
+@media screen and (max-width: 520px) {
+    .Domains-Container{
+        position: static;
+        padding: 30px;
+    }
+
+    .Domains-Container::before{
+        background-image: none;
+    }
+    .Domain-heading-elex, .Domain-heading-mech, .Domain-heading-prog{
+        font-size: 1.7em;
+    }
+    /* .Elex-domain{        
+        position:relative;       
+
+     }     
+     .Elex-domain::before{
+        content: '';
+        background-image: url('../../assets/Electronics.png');        
+        background-repeat: no-repeat;   
+        background-repeat: contain;            
+        position: absolute;
+        color: white;
+        width: 50%;  
+        top: 20px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.7;
+     }
+     .Mech-domain{        
+        position:relative;       
+
+     }     
+     .Mech-domain::before{
+        content: '';
+        background-image: url('../../assets/Mechanics.png');        
+        background-repeat: no-repeat;        
+        position: absolute;
+        background-repeat: contain;             
+        color: white;
+        width: 50%;  
+        margin-left: 400px;
+        top: 5px;
+        right: 0px;
+        bottom: 0px;
+        left: -150px;
+        opacity: 0.7;
+     }
+     .Prog-domain{        
+        position:relative;       
+
+     }     
+     .Prog-domain::before{
+        content: '';
+        background-image: url('../../assets/Software.png');        
+        background-repeat: no-repeat;      
+        background-repeat: contain;             
+        position: absolute;
+        color: white;        
+        width: 50%;  
+        top: 20px;
+        right: 0px;
+        bottom: 0px;
+        left:-90px;
+        opacity: 0.7;
+     } */
+}
+
 
 /*! media query after 1240 */
 @media screen and (min-width: 1290px){

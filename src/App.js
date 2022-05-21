@@ -1,14 +1,10 @@
 import React from 'react'
 import {BrowserRouter, Route,Routes} from 'react-router-dom'
-import Faculty from './Components/HomePage/Faculty.js'
-import AboutUs from './Components/HomePage/AboutUs.js'
-import Numbers from './Components/HomePage/Numbers.js'
-import GetInTouch from './Components/HomePage/GetInTouch.js'
-import Domains from './Components/HomePage/Domains.js'
 import NavBar from './Components/NavBar.js'
 import Achievements from './Components/Achievements.js'
 import Footer from './Components/Footer.js';
 import HomePage from './Components/HomePage.js';
+import Workshop from './Components/Workshop.js';
 
 
 const App = () => {
@@ -24,7 +20,7 @@ const App = () => {
           <Route path="/blogs" element={<Achievements/>} />
           <Route path="/projects" element={<Achievements/>} />
           <Route path="/events" element={<Achievements />} />          
-          <Route path="/workshops" element={<Achievements/>} />          
+          <Route path="/workshops" element={<Workshop/>} />          
         </Routes>
       <Footer />
       </BrowserRouter>        
