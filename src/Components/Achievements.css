@@ -3,12 +3,14 @@
     padding-left: 100px;
     padding-right: 100px;
     background-color: #03090C;
+    padding-top:50px;
 }
 .year{
     font-size: 8em;
     top:20%;
     left:35%;
 }
+
 
 .achievement-row{
     padding-bottom: 100px;
@@ -147,8 +149,141 @@
     
  }
 
- /* @media screen and (max-width: 825px){
-    .achievements-img{
-        display: none;
+ @media screen and (max-width: 820px){
+     
+    .year{
+        padding-left: 10px;
+        font-size:5em ;
+        top:20%;
+        left:0%;
+        right:auto;
+        z-index: 100;
     }
- } */
+    
+    .competition-container-left{
+        display: block;
+        padding: 0%;
+        text-align: right;
+    }
+
+
+    .competition-container-right{
+        display: block;
+        padding: 0%;
+        text-align:right;
+    }
+
+    .competition-subheading{
+        opacity: 100%;
+        text-align: center;
+    }
+    
+    .competition-details{        
+        height: 400px;
+        width: 100%;    
+        display: flex;        
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;         
+        position:relative;            
+
+     }
+     .div1::before{
+        content: '';
+        background-image: url('../assets/Achievements_images/A1.png');        
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.4;
+     }
+     .div2::before{
+        content: '';
+        background-image: url('../assets/Achievements_images/A2.png');        
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.4;
+     }
+     .div3::before{
+        content: '';
+        background-image: url('../assets/Achievements_images/A3.png');        
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.4;
+     }
+     .div4::before{
+        content: '';
+        background-image: url('../assets/Achievements_images/A4.png');        
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.4;
+     }
+     .div5::before{
+        content: '';
+        background-image: url('../assets/Achievements_images/A5.png');        
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.4;
+     }
+     .div6::before{
+        content: '';
+        background-image: url('../assets/Achievements_images/A6.1.png');        
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.4;
+     }
+     .div7::before{
+        content: '';
+        background-image: url('../assets/Achievements_images/A7.png');        
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.4;
+     }
+     .div8::before{
+        content: '';
+        background-image: url('../assets/Achievements_images/A8.1.png');        
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.4;
+     }
+     .image-col{
+         display: none;
+     }
+     
+ }
+
+ @media screen and (max-width: 512px){
+     .year{
+         font-size: 4em;         
+     }
+ }

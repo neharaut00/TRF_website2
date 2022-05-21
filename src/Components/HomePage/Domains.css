@@ -2,6 +2,7 @@
     text-align:center;
     padding: 100px;
     position:relative;
+    overflow:hidden;
 }
 
 
@@ -50,4 +51,572 @@
     bottom: 170px;
     text-align: right;
     padding-left: 70px;
+}
+
+@media screen and (max-width: 1240px) {
+    .Domain-heading-elex{
+        right: 190px;
+        top: 200px;
+    }
+    .Domain-heading-mech{
+        left: 220px;
+        top: 350px;
+    }
+    .Domain-heading-prog{
+        right:220px;
+        bottom:190px;
+    }
+    .Domain-content-elex{
+        left: 10px;
+        top:190px;        
+    }
+    .Domain-content-mech{
+        right: 10px;
+        top: 330px;        
+    }
+    .Domain-content-prog{
+        left: 10px;
+        bottom: 170px;       
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    .Domain-heading-elex{
+        right: 170px;
+        top: 180px;
+    }
+    .Domain-heading-mech{
+        left: 200px;
+        top: 320px;
+    }
+    .Domain-heading-prog{
+        right:200px;
+        bottom:180px;
+    }
+    .Domain-content-elex{
+        left: 0px;
+        top:160px;        
+    }
+    .Domain-content-mech{
+        right: 0px;
+        top: 300px;        
+    }
+    .Domain-content-prog{
+        left: 0px;
+        bottom: 145px;       
+    }
+    .domain-img{
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1160px){
+    .Domain-heading-elex{
+        right: 150px;
+        top: 170px;
+    }
+    .Domain-heading-mech{
+        left: 180px;
+        top: 290px;
+    }
+    .Domain-heading-prog{
+        right:180px;
+        bottom:160px;
+    }
+    .Domain-content-elex{
+        left: 10px;
+        top:140px;        
+    }
+    .Domain-content-mech{
+        right: 10px;
+        top: 270px;        
+    }
+    .Domain-content-prog{
+        left: 10px;
+        bottom: 125px;       
+    }
+    .domain-img{
+        width: 350px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1110px){
+    .Domain-heading-elex{
+        right: 120px;
+        top: 165px;
+    }
+    .Domain-heading-mech{
+        left: 150px;
+        top: 285px;
+    }
+    .Domain-heading-prog{
+        right:150px;
+        bottom:155px;
+    }
+    .Domain-content-elex{
+        left: 0px;
+        top:135px;        
+    }
+    .Domain-content-mech{
+        right: 0px;
+        top: 265px;        
+    }
+    .Domain-content-prog{
+        left: 0px;
+        bottom: 120px;       
+    }
+    .domain-img{
+        width: 340px;
+        height: auto;
+    }
+}
+@media screen and (max-width: 1060px){
+    .Domain-heading-elex, .Domain-heading-mech, .Domain-heading-prog{
+        font-size: 2em;
+    }
+    .Domain-content-elex, .Domain-content-mech, .Domain-content-prog{
+        font-size: 0.7em;
+    }
+    .Domain-content-elex{
+        left: -20px;
+        top:160px;        
+    }
+    .Domain-content-mech{
+        right: -20px;
+        top: 275px;        
+    }
+    .Domain-content-prog{
+        left: -20px;
+        bottom: 145px;       
+    }
+}
+
+@media screen and (max-width: 1030px){
+    .Domain-content-elex{
+        left: -40px;
+        top:160px;        
+    }
+    .Domain-content-mech{
+        right: -40px;
+        top: 275px;        
+    }
+    .Domain-content-prog{
+        left: -40px;
+        bottom: 145px;       
+    }
+}
+@media screen and (max-width: 990px){
+    .Domain-content-elex{
+        left: -65px;
+        top:160px;        
+    }
+    .Domain-content-mech{
+        right: -65px;
+        top: 275px;        
+    }
+    .Domain-content-prog{
+        left: -65px;
+        bottom: 145px;       
+    }
+    .Domain-heading-elex{
+        right: 90px;
+        top: 165px;
+    }
+    .Domain-heading-mech{
+        left: 120px;
+        top: 285px;
+    }
+    .Domain-heading-prog{
+        right:120px;
+        bottom:155px;
+    }
+
+    @media screen and (max-width: 935px){
+        .domain-img{
+            width: 320px;
+            height: auto;
+        }
+        .Domain-content-elex{
+            left: -70px;
+            top:150px;        
+        }
+        .Domain-content-mech{
+            right: -70px;
+            top: 260px;        
+        }
+        .Domain-content-prog{
+            left: -70px;
+            bottom: 130px;       
+        }
+        .Domain-heading-elex{
+            right: 70px;
+            top: 160px;
+        }
+        .Domain-heading-mech{
+            left: 100px;
+            top: 270px;
+        }
+        .Domain-heading-prog{
+            right:100px;
+            bottom:160px;
+        }
+    }
+}
+
+@media screen and (max-width: 912px){
+    .domain-img{
+        display: none;
+    }
+    .Domain-content-elex, .Domain-content-mech, .Domain-content-prog{
+        position: static;
+        padding: 0px;
+        margin-left: 0px;
+    }
+    .Domain-heading-elex, .Domain-heading-mech, .Domain-heading-prog{
+        position: static;
+    }
+}
+
+/* after 912 this image will go and background image will come */
+
+/*! media query after 1240 */
+@media screen and (min-width: 1290px){
+    .Domain-heading-elex{
+        right: 230px;
+        top: 200px;
+    }
+    .Domain-heading-mech{
+        left: 260px;
+        top: 350px;
+    }
+    .Domain-heading-prog{
+        right:260px;
+        bottom:190px;
+    }
+    .Domain-content-elex{
+        left: 50px;
+        top:190px;        
+    }
+    .Domain-content-mech{
+        right: 50px;
+        top: 330px;        
+    }
+    .Domain-content-prog{
+        left: 50px;
+        bottom: 170px;       
+    }
+    
+}
+
+@media screen and (min-width: 1330px){
+    .Domain-heading-elex{
+        right: 250px;
+        top: 200px;
+    }
+    .Domain-heading-mech{
+        left: 280px;
+        top: 350px;
+    }
+    .Domain-heading-prog{
+        right:280px;
+        bottom:190px;
+    }
+    .Domain-content-elex{
+        left: 70px;
+        top:190px;        
+    }
+    .Domain-content-mech{
+        right: 70px;
+        top: 330px;        
+    }
+    .Domain-content-prog{
+        left: 70px;
+        bottom: 170px;       
+    }
+    
+}
+
+@media screen and (min-width: 1370px){
+    .Domain-heading-elex{
+        right: 270px;
+        top: 200px;
+    }
+    .Domain-heading-mech{
+        left: 305px;
+        top: 350px;
+    }
+    .Domain-heading-prog{
+        right:305px;
+        bottom:190px;
+    }
+    .Domain-content-elex{
+        left: 85px;
+        top:190px;        
+    }
+    .Domain-content-mech{
+        right: 85px;
+        top: 330px;        
+    }
+    .Domain-content-prog{
+        left: 85px;
+        bottom: 170px;       
+    }
+    
+}
+
+@media screen and (min-width: 1410px){
+    .Domain-heading-elex{
+        right: 290px;
+        top: 200px;
+    }
+    .Domain-heading-mech{
+        left: 325px;
+        top: 350px;
+    }
+    .Domain-heading-prog{
+        right:325px;
+        bottom:190px;
+    }
+    .Domain-content-elex{
+        left: 105px;
+        top:190px;        
+    }
+    .Domain-content-mech{
+        right: 105px;
+        top: 330px;        
+    }
+    .Domain-content-prog{
+        left: 105px;
+        bottom: 170px;       
+    }
+    
+}
+
+@media screen and (min-width: 1460px){
+    .Domain-heading-elex{
+        right: 310px;
+        top: 200px;
+    }
+    .Domain-heading-mech{
+        left: 345px;
+        top: 350px;
+    }
+    .Domain-heading-prog{
+        right:345px;
+        bottom:190px;
+    }
+    .Domain-content-elex{
+        left: 125px;
+        top:190px;        
+    }
+    .Domain-content-mech{
+        right: 125px;
+        top: 330px;        
+    }
+    .Domain-content-prog{
+        left: 125px;
+        bottom: 170px;       
+    }
+    
+}
+
+@media screen and (min-width: 1500px){
+    .Domain-heading-elex{
+        right: 330px;
+        top: 200px;
+    }
+    .Domain-heading-mech{
+        left: 365px;
+        top: 350px;
+    }
+    .Domain-heading-prog{
+        right:365px;
+        bottom:190px;
+    }
+    .Domain-content-elex{
+        left: 145px;
+        top:190px;        
+    }
+    .Domain-content-mech{
+        right: 145px;
+        top: 330px;        
+    }
+    .Domain-content-prog{
+        left: 145px;
+        bottom: 170px;       
+    }
+    
+}
+
+
+@media screen and (min-width: 1560px){
+    .Domain-heading-elex{
+        right: 360px;
+        top: 200px;
+    }
+    .Domain-heading-mech{
+        left: 395px;
+        top: 350px;
+    }
+    .Domain-heading-prog{
+        right:395px;
+        bottom:190px;
+    }
+    .Domain-content-elex{
+        left: 175px;
+        top:190px;        
+    }
+    .Domain-content-mech{
+        right: 175px;
+        top: 330px;        
+    }
+    .Domain-content-prog{
+        left: 175px;
+        bottom: 170px;       
+    }
+    
+}
+
+@media screen and (min-width: 1620px){
+    .Domain-heading-elex{
+        right: 390px;
+        top: 200px;
+    }
+    .Domain-heading-mech{
+        left: 425px;
+        top: 350px;
+    }
+    .Domain-heading-prog{
+        right:425px;
+        bottom:190px;
+    }
+    .Domain-content-elex{
+        left: 205px;
+        top:190px;        
+    }
+    .Domain-content-mech{
+        right:205px;
+        top: 330px;        
+    }
+    .Domain-content-prog{
+        left: 205px;
+        bottom: 170px;       
+    }
+    
+}
+
+
+@media screen and (min-width: 1700px){
+    .Domain-heading-elex{
+        right: 430px;
+        top: 200px;
+    }
+    .Domain-heading-mech{
+        left: 465px;
+        top: 350px;
+    }
+    .Domain-heading-prog{
+        right:465px;
+        bottom:190px;
+    }
+    .Domain-content-elex{
+        left: 245px;
+        top:190px;        
+    }
+    .Domain-content-mech{
+        right:245px;
+        top: 330px;        
+    }
+    .Domain-content-prog{
+        left: 245px;
+        bottom: 170px;       
+    }
+    
+}
+
+@media screen and (min-width: 1800px){
+    .Domain-heading-elex{
+        right: 480px;
+        top: 200px;
+    }
+    .Domain-heading-mech{
+        left: 505px;
+        top: 350px;
+    }
+    .Domain-heading-prog{
+        right:505px;
+        bottom:190px;
+    }
+    .Domain-content-elex{
+        left: 295px;
+        top:190px;        
+    }
+    .Domain-content-mech{
+        right:295px;
+        top: 330px;        
+    }
+    .Domain-content-prog{
+        left: 295px;
+        bottom: 170px;       
+    }
+    
+}
+
+
+@media screen and (min-width: 1900px){
+    .Domain-heading-elex{
+        right: 530px;
+        top: 200px;
+    }
+    .Domain-heading-mech{
+        left: 565px;
+        top: 350px;
+    }
+    .Domain-heading-prog{
+        right:565px;
+        bottom:190px;
+    }
+    .Domain-content-elex{
+        left: 345px;
+        top:190px;        
+    }
+    .Domain-content-mech{
+        right:345px;
+        top: 330px;        
+    }
+    .Domain-content-prog{
+        left: 345px;
+        bottom: 170px;       
+    }
+    
+}
+
+@media screen and (min-width: 2000px){
+    .Domain-heading-elex{
+        right: 580px;
+        top: 200px;
+    }
+    .Domain-heading-mech{
+        left: 605px;
+        top: 350px;
+    }
+    .Domain-heading-prog{
+        right:605px;
+        bottom:190px;
+    }
+    .Domain-content-elex{
+        left: 395px;
+        top:190px;        
+    }
+    .Domain-content-mech{
+        right:395px;
+        top: 330px;        
+    }
+    .Domain-content-prog{
+        left: 395px;
+        bottom: 170px;       
+    }
+    
 }
