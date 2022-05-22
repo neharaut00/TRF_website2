@@ -5,6 +5,8 @@ import Achievements from './Components/Achievements.js'
 import Footer from './Components/Footer.js';
 import HomePage from './Components/HomePage.js';
 import Workshop from './Components/Workshop.js';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 
 const App = () => {
