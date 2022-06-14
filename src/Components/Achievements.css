@@ -5,7 +5,7 @@
     background-color: #03090C;
     padding-top:50px;
 }
-.year{
+.achievement-year{
     font-size: 8em;
     top:20%;
     left:35%;
@@ -65,17 +65,17 @@
     .achievements{
         padding-left: 50px;
     }
-    .year{
+    .achievement-year{
         left:30%;
     }
  }
  @media screen and (max-width: 1196px) {
-    .year{
+    .achievement-year{
         left:29%;
     }
  }
  @media screen and (max-width: 1196px) {
-    .year{
+    .achievement-year{
         left:28%;
     }
  }
@@ -87,25 +87,25 @@
  }
 
  @media screen and (max-width: 1039px) {
-    .year{
+    .achievement-year{
         font-size: 7.5em;
         left: 29%;
     }
  }
  @media screen and (max-width: 1020px) {
-    .year{
+    .achievement-year{
         font-size: 7.2em;
     }
  }
  @media screen and (max-width: 1000px) {
-    .year{
+    .achievement-year{
         font-size: 7em;
         left: 30%;
        
     }
  }
  @media screen and (max-width: 992px) {
-    .year{
+    .achievement-year{
         font-size: 6.5em;        
        
     }
@@ -118,7 +118,7 @@
     }
  }
  @media screen and (max-width: 936px) {
-    .year{
+    .achievement-year{
         font-size: 6.25em;        
        
     }
@@ -132,13 +132,13 @@
  }
 
  @media screen and (max-width: 870px){
-    .year{
+    .achievement-year{
         left:29%;
     }
  }
 
  @media screen and (max-width: 850px){
-    .year{
+    .achievement-year{
         font-size: 6em;
         left:28%;
     }
@@ -151,7 +151,7 @@
 
  @media screen and (max-width: 820px){
      
-    .year{
+    .achievement-year{
         padding-left: 10px;
         font-size:5em ;
         top:20%;
@@ -283,7 +283,7 @@
  }
 
  @media screen and (max-width: 512px){
-     .year{
+     .achievement-year{
          font-size: 4em;         
      }
  }

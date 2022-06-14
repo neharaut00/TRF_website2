@@ -69,7 +69,7 @@ function Achievements() {
           {
               isVisible 
               && 
-          <h1 className="year" style={{ 'position': "fixed", 'backgroundColor': 'transparent', 'display': 'relative', "color": "white", "fontFamily": "Joyride" }}>
+          <h1 className="achievement-year" style={{ 'position': "fixed", 'backgroundColor': 'transparent', 'display': 'relative', "color": "white", "fontFamily": "Joyride" }}>
                       <div id="hide" style={{ "fontSize": "inherit", 'display': 'inline-block','color': 'black', 'backgroundColor': 'transparent', 'textShadow': '1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 0.5px 0.5px #fff, -0.5px -0.5px 0 #fff, 0.5px -0.5px 0 #fff, -0.5px 0.5px 0 #fff' }}>
                   2
               </div>
