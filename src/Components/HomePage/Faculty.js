@@ -113,13 +113,13 @@ function Faculty() {
                       
                           <svg className="arrow" width="50" height="30" viewBox="0 0 48 31" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={prev}>
                           
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.234 14.188L19.288 1.71798L18 0.187986L1.30767e-06 15.23L18 30.188L19.29 28.66L4.232 16.188L48 16.188L48 14.188L4.234 14.188Z" fill="white" />
+                            <path fillRule="evenodd" clipRule="evenodd" d="M4.234 14.188L19.288 1.71798L18 0.187986L1.30767e-06 15.23L18 30.188L19.29 28.66L4.232 16.188L48 16.188L48 14.188L4.234 14.188Z" fill="white" />
                           
                         </svg>
                         <span className= "slideno" style={{ fontWeight: "700", fontFamily:"Joyride", marginTop: "30px", padding: "20px" }} >{slide.id}</span>
                         <svg className="arrow" width="50" height="30" viewBox="0 0 48 31" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={next}>
                      
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M43.766 16.188L28.712 28.658L30 30.188L48 15.146L30 0.187988L28.71 1.71599L43.768 14.188L0 14.188L0 16.188L43.766 16.188Z" fill="#A4E5E5"  />
+                            <path fillRule="evenodd" clipRule="evenodd" d="M43.766 16.188L28.712 28.658L30 30.188L48 15.146L30 0.187988L28.71 1.71599L43.768 14.188L0 14.188L0 16.188L43.766 16.188Z" fill="#A4E5E5"  />
                          
                         </svg>
                       {/* <FaArrowLeft className='left-arrow' onClick={prev} />
@@ -261,13 +261,13 @@ export default Faculty
 //                                            <div style={{ textAlign: "right", color: "white" , padding: "0rem"}}>
 //                         <svg className="arrow" width="70" height="60" viewBox="0 0 48 31" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={this.previous}>
                                          
-//                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.234 14.188L19.288 1.71798L18 0.187986L1.30767e-06 15.23L18 30.188L19.29 28.66L4.232 16.188L48 16.188L48 14.188L4.234 14.188Z" fill="white" />
+//                                            <path fillRule="evenodd" clipRule="evenodd" d="M4.234 14.188L19.288 1.71798L18 0.187986L1.30767e-06 15.23L18 30.188L19.29 28.66L4.232 16.188L48 16.188L48 14.188L4.234 14.188Z" fill="white" />
                                          
 //                                        </svg>
 //                                       <span style={{fontSize: "2rem", fontWeight: "700", marginTop: "30px", padding: "10px", fontColor: "#ffffff"}} >{slide.key}</span>
 //                                        <svg className="arrow" width="70" height="60" viewBox="0 0 48 31" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={this.next}>
                                     
-//                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M43.766 16.188L28.712 28.658L30 30.188L48 15.146L30 0.187988L28.71 1.71599L43.768 14.188L0 14.188L0 16.188L43.766 16.188Z" fill="#A4E5E5"  />
+//                                            <path fillRule="evenodd" clipRule="evenodd" d="M43.766 16.188L28.712 28.658L30 30.188L48 15.146L30 0.187988L28.71 1.71599L43.768 14.188L0 14.188L0 16.188L43.766 16.188Z" fill="#A4E5E5"  />
                                         
 //                                        </svg>
 //                            </div>

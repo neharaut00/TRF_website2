@@ -1,29 +1,29 @@
 *{
     overflow: hidden;
     position: relative;
-    display: bloa;
+    /* display: block; */
 }
 canvas {
     height: 500px;
   }
 
 
-/* width */
-canvas::-webkit-scrollbar {
+width
+*::-webkit-scrollbar {
   width: 10px;
 }
 
 /* Track */
-canvas::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
   background: #f1f1f1; 
 }
  
 /* Handle */
-canvas::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
   background: #888; 
 }
 
 /* Handle on hover */
-canvas::-webkit-scrollbar-thumb:hover {
+*::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }

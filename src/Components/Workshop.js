@@ -77,9 +77,9 @@ export default class Workshop extends Component {
                       y="39"
                       fill="#ffff"
                       fontSize="1.5em"
-                      text-anchor="middle"
+                      textAnchor="middle"
                       fontWeight="normal"
-                      alignment-baseline="middle">
+                      alignmentBaseline="middle">
                   Know More
                 </text>
               {/* </a> */}
@@ -112,15 +112,37 @@ export default class Workshop extends Component {
             <div className="custom-paging">
               
             </div>
-          )
+        ),
+        responsive: [
+            {
+              breakpoint: 1133,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 707,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                initialSlide: 1
+              }
+            },
+            
+          ]        
         };
    
     return (
         <div className="Workshop">
-            <img className="Workshop-img" src={WorkshopImg} alt="Snow" style={{ "width": "45%",  "height":"650px"}} />
-           <div className="Workshop-text-container">
-               <h1 className='Workshop-main-heading'>wOrkshOps</h1>
-               <p className='Workshop-subheading'>TRF is leading technical club in Vishwakarma Institute of Technology that builds powerful Robotics and Software solutions.</p>
+            <img className="Workshop-img" src={WorkshopImg} alt="Snow" style={{   "height":"650px"}} />
+           <div className="Workshop-text-container" style={{ "zIndex":"3000000"}}> 
+                <h1 className='Workshop-main-heading' style={{ "zIndex": "3000000", "backgroundColor": "transparent" }}>wOrkshOps</h1>
+                <div className="Workshop-main-heading-mob-view" style={{ "zIndex": "3000000", "backgroundColor": "transparent" }}><h1 className="mob-view" style={{ "zIndex": "3000000", "backgroundColor": "transparent" }}>wOrk</h1>
+                <h1 className="mob-view" style={{ "zIndex": "3000000", "backgroundColor": "transparent" }}>shOps</h1></div>
+               <p className='Workshop-subheading' style={{ "zIndex":"3000000", "backgroundColor":"transparent"}}>TRF is leading technical club in Vishwakarma Institute of Technology that builds powerful Robotics and Software solutions.</p>
             </div>
             
         <Slider {...settings} className="workshop-slider">

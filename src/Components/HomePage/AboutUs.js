@@ -25,19 +25,19 @@ function AboutUs() {
               <p>
                 
                 <svg className="aboutUs-Rect-neha" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                  <rect x="1" y="1" width="10" height="10" stroke="#559083" stroke-width="2" />
+                  <rect x="1" y="1" width="10" height="10" stroke="#559083" strokeWidth="2" />
                 </svg>                            
                   The Robotics Forum, the largest technical club of VIT Pune, with a legacy of 15 years
               </p>
               <p>
                 <svg className="aboutUs-Rect-neha" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                  <rect x="1" y="1" width="10" height="10" stroke="#559083" stroke-width="2" />
+                  <rect x="1" y="1" width="10" height="10" stroke="#559083" strokeWidth="2" />
                 </svg>
                 A student-run club that aims to foster the technical skills of students and help them
               </p>
               <p>
                 <svg className="aboutUs-Rect-neha" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                  <rect x="1" y="1" width="10" height="10" stroke="#559083" stroke-width="2" />
+                  <rect x="1" y="1" width="10" height="10" stroke="#559083" strokeWidth="2" />
                 </svg>
                 The club have earned laurels in Robocon and aced several national  competition along with conducting successful workshops with avid participants.
               </p>
@@ -53,9 +53,9 @@ function AboutUs() {
                       y="39"
                       fill="#FFFFFF"
                       fontSize="1.5em"
-                      text-anchor="middle"
+                      textAnchor="middle"
                       fontWeight="normal"
-                      alignment-baseline="middle">
+                      alignmentBaseline="middle">
                   Learn More
                 </text>
               {/* </a> */}
@@ -73,8 +73,3 @@ function AboutUs() {
 
 export default AboutUs
 
-//TODO
-// Increase font size of the vit pune text //*done
-// Interactive components
-// slightly left align the robot
-// right side padding to the content of the about us

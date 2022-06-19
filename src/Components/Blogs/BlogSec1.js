@@ -26,9 +26,9 @@ export default function BlogSec1() {
                       y="39"
                       fill="#FFFFFF"
                       fontSize="1.5em"
-                      text-anchor="middle"
+                      textAnchor="middle"
                       fontWeight="normal"
-                      alignment-baseline="middle">
+                      alignmentBaseline="middle">
                   Blogs
                 </text>
     </svg>  
