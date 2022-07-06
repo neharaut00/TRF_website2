@@ -1,0 +1,232 @@
+.roboconseccard2 {
+  border: 2px solid black;
+  display: flex;
+  padding: 1rem 4rem;
+  font-family: Greycliff;
+
+  /* new added */
+  justify-content: space-evenly;
+}
+.roboconseccard1 {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 1rem 4rem;
+  font-family: Greycliff;
+  /* new added */
+  justify-content: space-evenly;
+}
+.roboconseccard3 {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 1rem 4rem;
+  /* new added */
+  justify-content: space-evenly;
+}
+.year{
+font-family: Joyride;
+font-weight: 400;
+font-size: 4rem;
+}
+
+.cardHeading{
+  font-family: Greycliff;
+}
+/* .roboconsec2cardimage{
+    width:25rem;
+    height:28rem;
+} */
+.roboconseccard0 {
+  padding: 1rem 4rem;
+  display: flex;
+  width: 70vw;
+  font-family: Greycliff;
+  color: #FFFFFF99;
+}
+.roboconsec2cardimage1 {
+  width: 25rem;
+  height: 30rem;
+  margin-right: 5rem;
+}
+.roboconsec2cardimage2 {
+  width: 25rem;
+  height: 30rem;
+  margin-left: 5rem;
+}
+.roboconsec2cardimage3 {
+  width: 25rem;
+  height: 30rem;
+  margin-right: 5rem;
+}
+
+.verticallinerobocon1 {
+  border-left: 3px solid rgb(72, 111, 97);
+
+  margin-right: 0.5rem;
+  margin-top: 0.4rem;
+  height: 7rem;
+}
+
+.verticallinerobocon {
+  border-left: 3px solid rgb(72, 111, 97);
+  margin-right: 0.5rem;
+  margin-top: 0.7rem;
+  height: 6.4rem;
+}
+.verticlelinedivcard3 {
+  display: flex;
+  /* justify-content: center; */
+  text-align: left;
+}
+
+.roboconseccard3subdiv1 {
+  margin-top: 1rem;
+  width: 56vw;
+}
+/* card 2 verticle line */
+.verticlelinedivcard2 {
+  display: flex;
+  /* justify-content: center; */
+  text-align: left;
+}
+.roboconseccard2subdiv1 {
+  margin-top: 1rem;
+  width: 56vw;
+}
+
+/* card 1 verticle line */
+.verticlelinedivcard1 {
+  display: flex;
+  /* justify-content: center; */
+  text-align: left;
+}
+.roboconseccard1subdiv1 {
+  margin-top: 1rem;
+  width: 56vw;
+}
+.roboconcard1text {
+  color: #FFFFFF99;
+
+}
+.roboconcard2text {
+  color: #FFFFFF99;
+  
+}
+.roboconcard3text {
+  color: #FFFFFF99;
+  
+}
+
+@media only screen and (max-width: 930px) {
+  .roboconseccard1 {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1rem 4rem;
+    flex-wrap: wrap;
+  }
+  .roboconseccard0 {
+    width: auto;
+  }
+  .roboconseccard2 {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1rem 4rem;
+    flex-wrap: wrap;
+  }
+
+  .roboconseccard3 {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+
+    flex-wrap: wrap;
+  }
+
+  .roboconsec2cardimage2 {
+    width: 25rem;
+
+    height: 23rem;
+    margin-left: 0rem;
+  }
+  .roboconsec2cardimage1 {
+    /* width:25rem;
+        height:28rem; */
+    max-width: 100%;
+
+    height: 23rem;
+    margin-right: 0rem;
+  }
+  .roboconsec2cardimage2 {
+    max-width: 100%;
+
+    height: 23rem;
+    margin-left: 0rem;
+  }
+  .roboconsec2cardimage3 {
+    max-width: 100%;
+
+    height: 23rem;
+    /* align-items:center; */
+    margin-right: 0rem;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .roboconseccard3subdiv1 {
+    text-align: center;
+    width: auto;
+  }
+  .roboconseccard3subdiv2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .roboconseccard1subdiv1 {
+    text-align: center;
+    width: auto;
+  }
+  .roboconseccard1subdiv2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .roboconseccard2subdiv1 {
+    text-align: center;
+    width: auto;
+  }
+  .roboconseccard2subdiv2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .verticlelinedivcard3 {
+    justify-content: center;
+  }
+  .verticlelinedivcard2 {
+    justify-content: center;
+  }
+  .verticlelinedivcard1 {
+    justify-content: center;
+  }
+  .verticallinerobocon1 {
+    height: 6.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .verticallinerobocon1 {
+    height: 16.5rem;
+  }
+  .roboconcard1text {
+    width: auto;
+  }
+  .roboconcard2text {
+    text-align: center;
+  }
+  .roboconcard3text {
+    width: auto;
+  }
+}

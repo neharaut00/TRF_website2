@@ -11,6 +11,9 @@
     left:35%;
 }
 
+Col{
+    background-color: transparent;
+}
 
 .achievement-row{
     padding-bottom: 100px;

@@ -33,7 +33,7 @@
     
 }
 
-.heading2-neha{
+.subheading-neha{
     font-family: "Greycliff";
     font-size:2.25em;
     padding-top: 10px;
@@ -114,7 +114,6 @@ svg.aboutUs-Rect-neha{
         text-align:center;
     }
     
-
     /* .AboutUs-Container .ImageDiv-neha{
         order: 2;
     }
@@ -134,8 +133,10 @@ svg.aboutUs-Rect-neha{
     }
     
     
-    .heading2-neha{
+    .subheading2-neha{
+        font-size: 20px;
         text-align:center;
+        justify-content: center;
     }
 
     .ImageDiv-neha{

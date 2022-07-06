@@ -1,36 +1,52 @@
-import React from 'react'
-import {BrowserRouter, Route,Routes} from 'react-router-dom'
-import NavBar from './Components/NavBar.js'
-import Achievements from './Components/Achievements.js'
-import Footer from './Components/Footer.js';
-import HomePage from './Components/HomePage.js';
-import Workshop from './Components/Workshop.js';
-import "slick-carousel/slick/slick.css"; 
+import React from "react";
+import { useEffect } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NavBar from "./Components/NavBar.js";
+import Footer from "./Components/Footer.js";
+import HomePage from "./Components/HomePage.js";
+import Achievements from "./Components/Achievements.js";
+import Workshop from "./Components/Workshop.js";
+import Robocon from "./Components/Robocon.js";
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Blogs from './Components/Blogs.js'
-import Roboccon from './Components/Roboccon.js'
 import "./App.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import ScrollToTop from "./Components/ScrollToTop.js";
 
 const App = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      mirror: true,
+      debounceDelay: 100,
+      throttleDelay: 150,
+    });
+  }, []);
   return (
-    <div style={{ margin: '0px', padding: '0px', backgroundColor: '#03090C'}}>
-      
+    <div style={{ margin: "0px", padding: "0px", backgroundColor: "#03090C" }}>
       <BrowserRouter>
-      <NavBar />
+        <ScrollToTop/>
+        <NavBar />
         <Routes>
-          <Route path="/" element={<HomePage/>} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/achievements" element={<Achievements />} />
-          <Route path="/roboccon" element={<Roboccon/>} />
-          <Route path="/blogs" element={<Blogs/>} />
-          <Route path="/projects" element={<HomePage/>} />
-          <Route path="/events" element={<HomePage />} />          
-          <Route path="/workshops" element={<Workshop/>} />          
+          <Route path="/roboccon" element={<Robocon />} />
+          <Route path="/blogs" element={<HomePage />} />
+          <Route path="/projects" element={<HomePage />} />
+          <Route path="/events" element={<HomePage />} />
+          <Route path="/workshops" element={<Workshop />} />
+          <Route path="/workshops/robonext" element={<HomePage />} />
+          <Route path="/workshops/robospark" element={<HomePage />} />
+          <Route path="/workshops/robodroid" element={<HomePage />} />
+          <Route path="/workshops/robovision" element={<HomePage />} />
+          <Route path="/workshops/level1" element={<HomePage />} />
+          <Route path="/workshops/level2" element={<HomePage />} />
         </Routes>
-      <Footer />
-      </BrowserRouter>        
-      
+        <Footer />
+      </BrowserRouter>
     </div>
-  )
-}
+  );
+};
 
 export default App;
