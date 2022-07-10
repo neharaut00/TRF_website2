@@ -7,9 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import "../assets/Robonext.png";
 import "../assets/Robospark.png";
 import "../assets/Robodroid.png";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-// ${invoice.number}
 export default class Workshop extends Component {
   constructor() {
     super();
@@ -97,37 +96,36 @@ export default class Workshop extends Component {
               {card.description}
             </p>
           </div>
-<Link to={`/workshops/${card.more}`}
-            key={card.id}
->
-          <button>
-            <svg className="know-more-btn" viewBox="0 0 210 77">
-              {/* <a href="#"> */}
-              <rect width={210} height={77} fill="black" />
+          <Link to={`/workshops/${card.more}`} key={card.id}>
+            <button>
+              <svg className="know-more-btn" viewBox="0 0 210 77">
+                {/* <a href="#"> */}
+                <rect width={210} height={77} fill="black" />
 
-              <path d="M0 0H24L0 24V0Z" fill="#ffff" />
-              <path d="M210 77L186 77L210 53L210 77Z" fill="#ffff" />
-              <text
-                x="105"
-                y="39"
-                fill="#ffff"
-                fontSize="1.5em"
-                textAnchor="middle"
-                fontWeight="normal"
-                alignmentBaseline="middle"
-              >
-                Know More
-              </text>
-              {/* </a> */}
-            </svg>
+                <path d="M0 0H24L0 24V0Z" fill="#ffff" />
+                <path d="M210 77L186 77L210 53L210 77Z" fill="#ffff" />
+                <text
+                  x="105"
+                  y="39"
+                  fill="#ffff"
+                  fontSize="1.5em"
+                  textAnchor="middle"
+                  fontWeight="normal"
+                  alignmentBaseline="middle"
+                >
+                  Know More
+                </text>
+                {/* </a> */}
+              </svg>
             </button>
-            </Link>
+          </Link>
         </div>
       );
     });
   }
 
   render() {
+    
     const settings = {
       className: "center",
       infinite: true,
@@ -135,8 +133,8 @@ export default class Workshop extends Component {
       dots: true,
       slidesToShow: 3,
       slidesToScroll: 3,
-      swipeToSlide: true,
       arrows: true,
+     
 
       appendDots: (dots) => (
         <div
@@ -155,6 +153,7 @@ export default class Workshop extends Component {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
+            swipeToSlide: true,
             infinite: true,
             dots: true,
           },
@@ -164,6 +163,7 @@ export default class Workshop extends Component {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
+            swipeToSlide: true,
             initialSlide: 1,
           },
         },
@@ -187,6 +187,7 @@ export default class Workshop extends Component {
           </h1>
           <div
             data-aos="fade-right"
+            data-aos-once="true"
             className="Workshop-main-heading-mob-view"
             style={{ zIndex: "3000000", backgroundColor: "transparent" }}
           >
@@ -205,6 +206,7 @@ export default class Workshop extends Component {
           </div>
           <p
             data-aos="fade-right"
+            data-aos-once="true"
             className="Workshop-subheading"
             style={{ zIndex: "3000000", backgroundColor: "transparent" }}
           >
@@ -220,13 +222,12 @@ export default class Workshop extends Component {
           {this.sliders()}
         </Slider>
         <p
+          className="drag-text"
           style={{
-            color: "white",
             fontSize: "1em",
+            textAlign: "center",
             zIndex: "3000",
-            paddingTop: "24px",
-            textAlign: "right",
-            paddingRight: "30px",
+            paddingTop: "17px",
           }}
         >
           {" "}

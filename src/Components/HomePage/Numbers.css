@@ -7,10 +7,10 @@
 
 }
 
-.Numbers{
+.Numbers>h1>span{
     color:#A4E5E5;
     font-family: 'Joyride';
-    font-size: 4em;
+    font-size: 2em;
 
 
 }

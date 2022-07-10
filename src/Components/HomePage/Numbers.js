@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
+import CountUp from "react-countup";
 import "./Numbers.css";
 
 function Numbers() {
@@ -16,9 +17,9 @@ function Numbers() {
       <div>
         <Row className="Numbers-row">
           <Col className="Numbers-col" xs={12} md={4}>
-            <div>
-              <h1 data-aos="fade-up" className="Numbers">
-                300+
+            <div data-aos="fade-up" className="Numbers">
+              <h1>
+              <CountUp start={0} end={300} duration={4} /><span>+</span>
               </h1>
             </div>
             <div>
@@ -28,9 +29,9 @@ function Numbers() {
             </div>
           </Col>
           <Col className="Numbers-col" xs={12} md={4}>
-            <div>
-              <h1 data-aos="fade-up" className="Numbers">
-                50+
+            <div data-aos="fade-up" className="Numbers">
+              <h1 >
+              <CountUp start={0} end={50} duration={4} /><span>+</span>
               </h1>
             </div>
             <div>
@@ -40,9 +41,9 @@ function Numbers() {
             </div>
           </Col>
           <Col className="Numbers-col" xs={12} md={4}>
-            <div>
-              <h1 data-aos="fade-up" className="Numbers">
-                450+
+            <div data-aos="fade-up" className="Numbers">
+              <h1 >
+              <CountUp start={0} end={450} duration={4} /><span>+</span>
               </h1>
             </div>
             <div>

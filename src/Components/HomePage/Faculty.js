@@ -3,12 +3,15 @@ import "./Faculty.css";
 import { Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import image from "../../assets/faculty.png";
+import khare from "../../assets/HMKhare.jpeg";
+import kotwal from "../../assets/GNKotwal.jpeg";
+import patwardhan from "../../assets/MMPatwardhan.jpg";
 import { useEffect } from "react";
 
 function Faculty() {
   const SliderData = [
     {
-      image: image,
+      image: khare,
       facultyName: "prOf. h. m. khare",
       designation: "Asscociate Professor and head",
       about:
@@ -16,7 +19,7 @@ function Faculty() {
       id: "01",
     },
     {
-      image: require("../../assets/images.jfif"),
+      image: kotwal,
       facultyName: "prOf. (dr.) g. n. kotwal",
       designation: "Asscociate Professor and head",
       about:
@@ -24,7 +27,7 @@ function Faculty() {
       id: "02",
     },
     {
-      image: image,
+      image: patwardhan,
       facultyName: "prOf. m. m. patwardhan",
       designation: "Asscociate Professor",
       about:
@@ -35,7 +38,7 @@ function Faculty() {
   const [current, setCurrent] = useState(0);
   const length = SliderData.length;
 
-  const autoScroll = true;
+  var autoScroll = true;
   let slideInterval;
   let intervalTime = 3000;
 
@@ -61,11 +64,27 @@ function Faculty() {
     setCurrent(0);
   }, []);
 
+  // let heightToStartFrom = 2188;
+  // const winScroll = window.scrollY;
+  // if (winScroll > heightToStartFrom) {
+  //   autoScroll = true;
+        
+  // }
+
+
+
   useEffect(() => {
-    if (autoScroll) {
+    //2288
+    console.log(window.scrollY);
+    if (autoScroll && window.scrollY > 2188) {
       auto();
     }
-    return () => clearInterval(slideInterval);
+    
+    return () => {
+      clearInterval(slideInterval)
+      
+      
+    };
   }, [current]);
 
   return (
@@ -80,7 +99,7 @@ function Faculty() {
             key={index}
           >
             {index === current && (
-              <Row style={{ margin: "0px" }} data-aos="zoom-in">
+              <Row style={{ margin: "0px" }}>
                 <Col className="ImageCol" style={{ padding: "0px" }}>
                   <div className="FacultyImageDiv-neha">
                     {/* <img src={slide.image} alt="faculty" className="faculty-image" /> */}
@@ -143,13 +162,13 @@ function Faculty() {
                 </Col>
                 <Col className="faculty_Content-neha">
                   <div className="facultyParaDiv">
-                    <h3 className="facultyHeading">
-                      <span style={{ color: "#559083" }}>|</span>{" "}
+                    <h3 className="facultyHeading">              
                       {slide.facultyName}
-                      <p className="facultyheading2-neha">
+                      
+                    </h3>
+                    <p className="facultyheading2-neha">
                         {slide.designation}
                       </p>
-                    </h3>
                     <div className="facultyParaContent-neha">
                       <div
                         className="facultyPara"

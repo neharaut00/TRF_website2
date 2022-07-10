@@ -5,7 +5,7 @@ export default function RoboconSec1() {
   return (
     <section className="mainsectionofrobocon">
       {/* section 1 (image) */}
-      <div className="RoboconSec1firstsec" style={{backgroundImage:`url(require("../../assets/RoboconBgImg1.png"))`}}>
+      <div className="RoboconSec1firstsec" >
         {/* Navbar */}
         <div className="Roboconsec1">
           <p className="RoboconSec1heading1">rObOcOn</p>

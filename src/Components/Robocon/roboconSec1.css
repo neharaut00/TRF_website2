@@ -10,13 +10,23 @@
   display: flex;
   flex-direction: column-reverse;
 }
-.RoboconSec1firstsec {    
+/* .RoboconSec1firstsec {    
   background-image: url('../../assets/RoboconBgImg1.png'),linear-gradient(rgba(0, 0, 0, 0.1), rgb(0, 0, 0));
   width: 100%;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
+  background-size: cover;
+} */
+
+.RoboconSec1firstsec{
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgb(0, 0, 0)),url('../../assets/RoboconBgImg1.png');
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment:scroll;
   background-size: cover;
 }
 
