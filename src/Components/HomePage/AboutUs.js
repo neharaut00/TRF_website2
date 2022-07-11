@@ -5,6 +5,7 @@ import "./AboutUs.css";
 import { Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import Slider from "react-slick";
+import {Link} from "react-router-dom";
 
 function AboutUs() {
   return (
@@ -30,13 +31,13 @@ function AboutUs() {
           md={{ span: "6", order: "last" }}
         >
           <div className="aboutUsParaDiv">
-            <div data-aos="fade-left">
-              <h3 className="aboutUsHeading">
-                <span style={{ color: "#559083" }}>|</span> abOut us
-              </h3>
-              <h5 className="subheading2-neha">
+            <div data-aos="fade-left" data-aos-once="true">
+              <h1 className="aboutUsHeading">
+                abOut us
+              </h1>
+              <h2 className="subheading2-neha" style={{paddingTop: "15px" }}>
                 VIT Pune's premier robotics club
-              </h5>
+              </h2>
               <div className="aboutUsPara" style={{ paddingTop: "15px" }}>
                 <p>
                   <svg
@@ -101,8 +102,9 @@ function AboutUs() {
                 </p>
               </div>
             </div>
-            <div className="aboutUsButtonContainer" data-aos="zoom-in-up">
-              <svg className="aboutUbutton-neha" viewBox="0 0 210 77">
+            <div className="aboutUsButtonContainer" data-aos="zoom-in-up" data-aos-once="true">
+              <Link to="/workshops">
+              <svg className="aboutUbutton-neha" viewBox="0 0 210 77" cursor={"pointer"}>
                 {/* <a href="#"> */}
                 <rect width={210} height={77} fill="#559083" />
 
@@ -116,11 +118,13 @@ function AboutUs() {
                   textAnchor="middle"
                   fontWeight="normal"
                   alignmentBaseline="middle"
+                  cursor={"pointer"}
                 >
                   Learn More
                 </text>
                 {/* </a> */}
-              </svg>
+                </svg>
+                </Link>
             </div>
           </div>
         </Col>

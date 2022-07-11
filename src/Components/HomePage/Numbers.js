@@ -7,19 +7,21 @@ function Numbers() {
   return (
     <div className="TRF-in-figures" style={{ overflow: "hidden" }}>
       <div>
-        <p className="Numbers-heading" data-aos="fade-right">
-          <span className="pipe" style={{ color: "#559083" }}>
-            |
-          </span>{" "}
+        <p
+          className="Numbers-heading"
+          data-aos="fade-right"
+          data-aos-once="true"
+        >
           TRF in figures
         </p>
       </div>
       <div>
         <Row className="Numbers-row">
           <Col className="Numbers-col" xs={12} md={4}>
-            <div data-aos="fade-up" className="Numbers">
+            <div data-aos="fade-up" data-aos-once="true" className="Numbers">
               <h1>
-              <CountUp start={0} end={300} duration={4} /><span>+</span>
+                <CountUp start={0} end={300} duration={4} />
+                <span>+</span>
               </h1>
             </div>
             <div>
@@ -29,9 +31,10 @@ function Numbers() {
             </div>
           </Col>
           <Col className="Numbers-col" xs={12} md={4}>
-            <div data-aos="fade-up" className="Numbers">
-              <h1 >
-              <CountUp start={0} end={50} duration={4} /><span>+</span>
+            <div data-aos="fade-up" data-aos-once="true" className="Numbers">
+              <h1>
+                <CountUp start={0} end={50} duration={4} />
+                <span>+</span>
               </h1>
             </div>
             <div>
@@ -41,9 +44,10 @@ function Numbers() {
             </div>
           </Col>
           <Col className="Numbers-col" xs={12} md={4}>
-            <div data-aos="fade-up" className="Numbers">
-              <h1 >
-              <CountUp start={0} end={450} duration={4} /><span>+</span>
+            <div data-aos="fade-up" data-aos-once="true" className="Numbers">
+              <h1>
+                <CountUp start={0} end={450} duration={4} />
+                <span>+</span>
               </h1>
             </div>
             <div>

@@ -1,289 +1,276 @@
-*{
-    background-color: #03090C;
-    padding-top:50px;
-}
-
-.contactUs{
+* {
+    background-color: #03090c;
+    padding-top: 50px;
+  }
+  
+  .contactUs {
     width: 100%;
     overflow: hidden;
-}
-
-.contactUs-button{
+  }
+  
+  .contactUs-button {
     display: block;
     float: right;
     padding-top: 30px;
-}
-
-.contactUs-row{
+  }
+  
+  .contactUs-row {
     padding: 100px 150px 50px 150px;
-}
-
-
-.form{
+  }
+  
+  .form {
     padding-left: 100px;
-}
-
-.form-col{
+  }
+  
+  .form-col {
     padding: 0;
-}
-
-.form-heading{
-    text-align:right;
+  }
+  
+  .form-heading {
+    text-align: right;
     margin-bottom: 50px;
-
-}
-
-form.form input[type="submit"] { display: none; float: right}
-
-.heading{
-    font-family: 'Joyride';
+  }
+  
+  form.form input[type="submit"] {
+    display: none;
+    float: right;
+  }
+  
+  .heading {
+    font-family: "Joyride";
     color: white;
-    font-size:3em;
-}
-
-.image-col{
-    justify-content:left;
+    font-size: 3em;
+  }
+  
+  .image-col {
+    justify-content: left;
     padding-top: 50px;
-
-}
-
-.input-field{
+  }
+  
+  .input-field {
     /* width:100%; */
-    display:block;
+    display: block;
     border: none;
     color: white;
-    
-}
-
-input[type=email], textarea {
+  }
+  
+  input[type="email"],
+  textarea {
     width: 100%;
     padding: 12px;
     border: none;
-    border-bottom: 1px solid #ccc;    
+    border-bottom: 1px solid #ccc;
     resize: vertical;
     color: white;
     margin-top: 6px;
-    margin-bottom:16px;
-}
-
-.subheading{
+    margin-bottom: 16px;
+  }
+  
+  .subheading {
     font-family: "GreyCliff";
     font-size: 2.25em;
     color: white;
-}
-
-
-svg.getintouch{
+  }
+  
+  svg.getintouch {
     height: 301px;
-    width:251px;
-
-}
-
-svg.Sendbutton-neha{
-    width:210px;
-    height:77px;
-}
-
-
-@media screen and (max-width: 1157px){
-    .contactUs-row{
-        padding: 100px 100px 50px 100px;
+    width: 251px;
+  }
+  
+  svg.Sendbutton-neha {
+    width: 210px;
+    height: 77px;
+  }
+  
+  svg.Sendbutton-neha:hover {
+    filter: sepia(100%) grayscale(100%);
+  }
+  
+  @media screen and (max-width: 1157px) {
+    .contactUs-row {
+      padding: 100px 100px 50px 100px;
     }
-}
-
-@media screen and (max-width: 1064px){
-    .contactUs-row{
-        padding: 100px 90px 50px 90px;
+  }
+  
+  @media screen and (max-width: 1064px) {
+    .contactUs-row {
+      padding: 100px 90px 50px 90px;
     }
-    .heading{
-        font-family: 'Joyride';
-        color: white;
-        font-size:2.75em;
+    .heading {
+      font-family: "Joyride";
+      color: white;
+      font-size: 2.75em;
     }
-    .subheading{
-        font-family: "GreyCliff";
-        font-size: 2em;
-        color: white;
+    .subheading {
+      font-family: "GreyCliff";
+      font-size: 2em;
+      color: white;
     }
-}
-
-@media screen and (max-width: 1004px){
-    .contactUs-row{
-        padding: 100px 80px 50px 80px;
+  }
+  
+  @media screen and (max-width: 1004px) {
+    .contactUs-row {
+      padding: 100px 80px 50px 80px;
     }
-}
-
-@media screen and (max-width: 978px){
-    .heading{
-        font-size:2.50em;
+  }
+  
+  @media screen and (max-width: 978px) {
+    .heading {
+      font-size: 2.5em;
     }
-    .subheading{
-        font-size: 1.75em;
+    .subheading {
+      font-size: 1.75em;
     }
-    svg.getintouch{
-        height: 281px;
-        width:231px;
-    
+    svg.getintouch {
+      height: 281px;
+      width: 231px;
     }
-    svg.Sendbutton-neha{
-        width:200px;
-        height:67px;
+    svg.Sendbutton-neha {
+      width: 200px;
+      height: 67px;
     }
-}
-
-/* !Media Queries */
-
-@media screen and (max-width: 918px){
-    .heading{
-        font-size:2.25em;
+  }
+  
+  /* !Media Queries */
+  
+  @media screen and (max-width: 918px) {
+    .heading {
+      font-size: 2.25em;
     }
-    
-    .subheading{
-        font-size: 1.50em;
+  
+    .subheading {
+      font-size: 1.5em;
     }
-
-    svg.getintouch{
-        height: 261px;
-        width:211px;
-    
+  
+    svg.getintouch {
+      height: 261px;
+      width: 211px;
     }
-    
-    svg.Sendbutton-neha{
-        width:190px;
-        height:57px;
+  
+    svg.Sendbutton-neha {
+      width: 190px;
+      height: 57px;
     }
-}
-
-@media screen and (max-width: 858px){
-    .heading{       
-        font-size:2em;
+  }
+  
+  @media screen and (max-width: 858px) {
+    .heading {
+      font-size: 2em;
     }
-    
-    .subheading{
-        font-size: 1.25em;
-
+  
+    .subheading {
+      font-size: 1.25em;
     }
-
-    svg.getintouch{
-        height: 241px;
-        width:191px;
-    
+  
+    svg.getintouch {
+      height: 241px;
+      width: 191px;
     }
-    
-    svg.Sendbutton-neha{
-        width:160px;
-        height:67px;
+  
+    svg.Sendbutton-neha {
+      width: 160px;
+      height: 67px;
     }
-}
-
-@media screen and (max-width: 798px){
-    .heading{       
-        font-size:1.75em;
+  }
+  
+  @media screen and (max-width: 798px) {
+    .heading {
+      font-size: 1.75em;
     }
-    
-    .form{
-        font-size: 1em;
+  
+    .form {
+      font-size: 1em;
     }
-
-    .subheading{
-        font-size: 1em;
-
+  
+    .subheading {
+      font-size: 1em;
     }
-
-    svg.getintouch{
-        height: 221px;
-        width:171px;
-    
+  
+    svg.getintouch {
+      height: 221px;
+      width: 171px;
     }
-    
-    svg.Sendbutton-neha{
-        width:140px;
-        height:47px;
+  
+    svg.Sendbutton-neha {
+      width: 140px;
+      height: 47px;
     }
-    
-}
-
-@media screen and (max-width: 738px){
-    .form{
-        padding-left: 60px;
+  }
+  
+  @media screen and (max-width: 738px) {
+    .form {
+      padding-left: 60px;
     }
-    svg.getintouch{
-        height: 211px;
-        width:161px;
-    
+    svg.getintouch {
+      height: 211px;
+      width: 161px;
     }
-    
-}
-
-@media screen and (max-width: 708px){
-    .contactUs-button{
-        display: block;
-        float: left;
-        padding-top: 30px;
+  }
+  
+  @media screen and (max-width: 708px) {
+    .contactUs-button {
+      display: block;
+      float: left;
+      padding-top: 30px;
     }
-
-    .contactUs-row{
-        padding: 100px 50px 50px 50px;
-       
+  
+    .contactUs-row {
+      padding: 100px 50px 50px 50px;
     }
-    .form{
-        padding-left: 50px;
+    .form {
+      padding-left: 50px;
     }
-    .form-col{
-        display:flex;
-        justify-content: center;
+    .form-col {
+      display: flex;
+      justify-content: center;
     }
-    .form-heading{
-        text-align:left;
-        margin-bottom: 50px;
-    
+    .form-heading {
+      text-align: left;
+      margin-bottom: 50px;
     }
-    .image-col{
-        display: none;
+    .image-col {
+      display: none;
     }
-    
-}
-
-@media screen and (max-width: 682px){
-    .heading{
-        font-family: 'Joyride';
-        color: white;
-        font-size:2.5em;
+  }
+  
+  @media screen and (max-width: 682px) {
+    .heading {
+      font-family: "Joyride";
+      color: white;
+      font-size: 2.5em;
     }
-    .subheading{
-        font-family: "GreyCliff";
-        font-size: 1.75em;
-        color: white;
+    .subheading {
+      font-family: "GreyCliff";
+      font-size: 1.75em;
+      color: white;
     }
-}
-
-@media screen and (max-width: 507px){
-    .form{
-        padding-left: 0px;
+  }
+  
+  @media screen and (max-width: 507px) {
+    .form {
+      padding-left: 0px;
     }
-   
-    .heading{
-        font-family: 'Joyride';
-        color: white;
-        font-size:1.75em;
+  
+    .heading {
+      font-family: "Joyride";
+      color: white;
+      font-size: 1.75em;
     }
-    .subheading{
-        font-family: "GreyCliff";
-        font-size: 1em;
-        color: white;
+    .subheading {
+      font-family: "GreyCliff";
+      font-size: 1em;
+      color: white;
     }
-    
-}
-
-@media screen and (max-width: 470px){
-    .form{
-        padding-left: 0px;
+  }
+  
+  @media screen and (max-width: 470px) {
+    .form {
+      padding-left: 0px;
     }
-
-    .form-col{
-        display:block;
-        justify-content: center;
+  
+    .form-col {
+      display: block;
+      justify-content: center;
     }
-   
-    
-}
+  }
+  

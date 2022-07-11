@@ -21,6 +21,7 @@ const App = () => {
       mirror: true,
       debounceDelay: 100,
       throttleDelay: 150,
+      
     });
   }, []);
   return (

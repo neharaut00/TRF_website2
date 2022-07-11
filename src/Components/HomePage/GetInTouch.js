@@ -4,9 +4,9 @@ import { Row, Col } from "react-bootstrap";
 
 function GetInTouch() {
   return (
-    <div className="contactUs">
+    <div id="ContactUs-id" className="contactUs">
       <Row className="contactUs-row">
-        <Col className="image-col" xs={4} data-aos="fade-right">
+        <Col className="image-col" xs={4} data-aos="fade-right" data-aos-once="true">
           <div>
             <svg
               className="getintouch"
@@ -68,7 +68,7 @@ function GetInTouch() {
             </svg>
           </div>
         </Col>
-        <Col className="form-col" data-aos="fade-left">
+        <Col className="form-col" data-aos="fade-left" data-aos-once="true">
           <div className="form-heading">
             <h1 className="heading">have an iDea?</h1>
             <p className="subheading">Tell us about it</p>

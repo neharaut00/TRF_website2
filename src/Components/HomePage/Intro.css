@@ -24,7 +24,7 @@
 
 .introParaDiv {
   margin: 0px;
-  padding: 6.6em 0em 6em 6em;
+  padding: 6.6em 0em 6em 8em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,6 +53,17 @@ img.Intro_Robot-neha {
   font-size: 1.5em;
   color: #c9c9c9;
   font-family: "GreyCliff";
+}
+
+.social-media:hover{
+  color: #A4E5E5;
+}
+
+.social-media-links:hover{
+  text-decoration: underline;
+    text-decoration-color: #A4E5E5;
+    color: #A4E5E5;
+    cursor: pointer; 
 }
 
 .ImageDiv-neha {
@@ -101,6 +112,11 @@ svg.intro-Rect-neha {
   margin-top: 0;
 }
 
+.Intro-button:hover {
+  filter: sepia(100%) grayscale(100%);
+}
+
+
 /* ! MediaQueries */
 @media only screen and (max-width: 1110px) {
   img.Intro_Robot-neha {
@@ -112,11 +128,16 @@ svg.intro-Rect-neha {
   .introPara > p {
     font-size: 1.3em;
   }
+  img.Intro_Robot-neha {
+    padding-top: 4em;
+  }
 }
 @media only screen and (max-width: 1040px) {
   .introPara > p {
     font-size: 1.2em;
   }
+  
+  
 }
 
 @media only screen and (max-width: 950px) {
@@ -185,6 +206,7 @@ svg.intro-Rect-neha {
   .introHeading {
     text-align: center;
   }
+  
   .links {
     align-content: center;
     justify-content: space-between;
