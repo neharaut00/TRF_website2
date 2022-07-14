@@ -179,14 +179,26 @@ Col{
     .competition-container-left{
         display: block;
         padding: 0%;
-        text-align: right;
+        text-align: center;
     }
 
+    .competition-container-left>.competition-details>.competition-subheading{
+        border-right: none;
+        text-align: center;
+        padding-right: 0px;
+        
+    }
+    .competition-container-right>.competition-details>.competition-subheading{
+        border-left: none;
+        text-align: center;
+        padding-left:0px;
+        
+    }
 
     .competition-container-right{
         display: block;
         padding: 0%;
-        text-align:right;
+        text-align:center;
     }
 
     .competition-subheading{
@@ -217,7 +229,7 @@ Col{
      }
      .div2::before{
         content: '';
-        background-image: url('../assets/Achievements_images/A2.png');        
+        background-image: url('../assets/Achievements_images/A2.1.png');        
         background-size: cover;
         position: absolute;
         top: 0px;

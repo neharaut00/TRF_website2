@@ -21,7 +21,7 @@ function Achievements() {
   }, []);
 
   const listenToScroll = () => {
-    let heightToHideFrom = 4010;
+    let heightToHideFrom = 4100;
     const winScroll = window.scrollY;
 
     if (winScroll > heightToHideFrom) {

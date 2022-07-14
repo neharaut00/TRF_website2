@@ -1,0 +1,225 @@
+.Team-img {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  background-color: transparent;
+  z-index: 3000;
+}
+.Team-text-container {
+  padding-top: 200px;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  z-index: 3000;
+}
+.Team-subheading {
+  font-family: "Greycliff";
+  font-size: 1.5em;
+  font-weight: 600;
+  color: white;
+  width: 55%;
+  padding-left: 10px;
+  border-left: 5px solid #559083;
+  opacity: 60%;
+}
+.Team-main-heading {
+  font-family: "Joyride";
+  font-size: 6em;
+  font-weight: 400;
+  color: white;    
+}
+
+.Team-row{
+  margin-right:4em;
+  margin-left:6em;
+}
+.team_name{
+  padding-top:15px;
+  font-family: "Greycliff";
+  font-size: 2em;
+  color:white;
+}
+.team_role{
+  font-family: "Greycliff";
+  font-size: 1.5em;
+  color:white;
+  opacity: 0.6;
+}
+
+.overlay_linkedin_icon{
+  opacity: 0;
+}
+
+.team-image-container {
+  position: relative;
+ 
+}
+
+.team-image-container .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.team-image-container:hover .content-overlay{
+  opacity: 1;
+}
+
+.team_card-image{
+  width: 100%;
+}
+
+.middle {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 45%;
+  opacity: 0;
+  top: 80%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.team-image-container:hover .middle{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.team_linkedin {
+  background-color: transparent;  
+  font-family: "Greycliff";
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  opacity: 1;
+  z-index: 3;
+  color: rgba(255,255,255,1);
+  font-size: 1.5em; 
+  padding: 16px 32px;
+}
+
+.team_linkedin:hover{
+  color:white;
+
+}
+
+@media only screen and (max-width: 1133px) {
+  .Team-text-container {
+    padding-left: 50px;
+  }
+  .Team-row{
+    margin-left:50px;
+    margin-right:2em;
+
+  }
+  .team_name{   
+    font-size: 1.8em;  
+  }
+  .team_role{
+    font-size: 1.3em;
+   
+  }
+}
+@media only screen and (max-width: 950px){
+  .team_name{   
+    font-size: 1.5em;  
+  }
+  .team_role{
+    font-size: 1.1em;
+   
+  }
+  .team_linkedin{
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .Team-main-heading {
+    font-family: "Joyride";
+    font-size: 5em;
+    font-weight: 400;
+    color: white;
+  }
+
+  .Team-subheading {
+    font-family: "Greycliff";
+    font-size: 1.25em;
+    font-weight: 600;
+    color: white;
+    width: 55%;
+    padding-left: 10px;
+    border-left: 5px solid #559083;
+    opacity: 60%;
+  }
+}
+@media only screen and (max-width: 840px) {
+  .mob-view {
+    font-family: "Joyride";
+    font-size: 7em;
+    font-weight: 400;
+    color: white;
+  }
+
+  .Team-img {
+    opacity: 0.3;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .Team-subheading {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .Team-text-container {
+    padding-left: 30px;
+  }
+  .Team-row{
+    margin-left:30px;
+    margin-right:0.8em;
+
+  }
+  .team_name{   
+    font-size: 1.2em;  
+  }
+  .team_role{
+    font-size: 0.8em;
+   
+  }
+  .team_linkedin{
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  .Team-text-container {
+    padding-left: 20px;
+  }
+  .Team-row{
+    margin-left:20px;
+    margin-right:0.5em;
+
+  }
+
+}
+@media only screen and (max-width: 350px) {
+  .Team-subheading {
+    font-size: 1em;
+  }
+}

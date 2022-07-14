@@ -76,10 +76,7 @@
     }
 }
 
-@media screen and (min-width:766px) and (max-width: 930px) {
-    .Numbers-heading{
-        padding-left: 70px;
-    }
+@media screen and (min-width:766px) and (max-width: 930px) {    
     
     .Numbers-row{
         width: 100%;
@@ -97,10 +94,7 @@
     .Numbers{
         font-size: 2.4em;
     }
-
-    .Numbers-heading{
-        padding-left: 50px;
-    }
+   
     
     .Numbers-row{
         width: 100%;
@@ -116,7 +110,6 @@
     }
     
     .Numbers-heading{
-        padding-left: 30px;
         font-size: 1.2em;
     }
     .Numbers-row{
@@ -139,7 +132,8 @@
     .Numbers-heading{      
         text-align: center;       
         font-size: 1.5em;
-        padding-left: 0px;
+        border-left:none;
+        margin:0;
     }
     .Numbers-row{
         width: 100%;
