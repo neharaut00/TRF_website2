@@ -18,21 +18,21 @@ function NavBar() {
   return (
     <div className="Navbar" >
     <nav className="nav">
-      <Link to="/" className="nav__brand_mobile">
+      <Link to="/" onClick={navToggle} className="nav__brand_mobile">
         TRF
       </Link>      
       <ul className={active}>
-        <li className="nav__item">
+        <li onClick={navToggle} className="nav__item">
           <Link to="/roboccon" className="nav__link">
             Roboccon
           </Link>
         </li>
-        <li className="nav__item">
+        <li onClick={navToggle} className="nav__item">
           <Link to="/achievements" className="nav__link">
             Achievements
           </Link>
         </li>
-        <li className="nav__item">
+        <li onClick={navToggle} className="nav__item">
           <Link to="/blogs" className="nav__link">
             Blogs
           </Link>
@@ -40,17 +40,17 @@ function NavBar() {
         <Link to="/" className="nav__brand">
         TRF
       </Link>   
-        <li className="nav__item">
+        <li onClick={navToggle} className="nav__item">
           <Link to="/projects" className="nav__link">
             Projects
           </Link>
         </li>
-        <li className="nav__item">
+        <li onClick={navToggle} className="nav__item">
           <Link to="/events" className="nav__link">
             Events
           </Link>
         </li>
-        <li className="nav__item">
+        <li onClick={navToggle} className="nav__item">
           <Link to="/workshops" className="nav__link">
             Workshops
           </Link>
