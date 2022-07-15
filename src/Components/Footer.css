@@ -1,144 +1,135 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    /* overflow: hidden; */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* overflow: hidden; */
 }
-.maindiv{
-    background:black;
-    padding-top:2rem;
-    padding: 100px 30px 10px 30px;
+.maindiv {
+  background: black;
+  padding-top: 2rem;
+  padding: 0px 0px 10px 0px;
 }
-.footertrflogo{
-    font-family: "Joyride";
-    font-weight: 400;
-    color: white;
-    font-size: 2.25em;
+.footertrflogo {
+  font-family: "Joyride";
+  font-weight: 400;
+  color: white;
+  font-size: 2.25em;
 }
-.Footertextcolor{
-    font-family: "Greycliff";
-    font-weight: 400;
-    color: rgb(170, 169, 169);
-    font-size:1.25em;
+.Footertextcolor {
+  font-family: "Greycliff";
+  font-weight: 400;
+  color: rgb(170, 169, 169);
+  font-size: 1.25em;
 }
-.footerheading2{
-    font-family: "Greycliff";
-    font-weight: 400;
-    color: white;
-    font-size: 1.5em;
-    margin-bottom:1rem;
-}
-
-.rightside{
-    text-align:right;
+.footerheading2 {
+  font-family: "Greycliff";
+  font-weight: 400;
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 1rem;
 }
 
-.footerheading1{
-    font-family: "Greycliff";
-    font-weight: 400;
-    color: white;
-    font-size: 1.5em;
-}
-.footsec2{
-    display: flex;
-    justify-content: space-between;
-    margin-top:3rem;
-    
-}
-.section{
-    padding :0rem 4rem;
-}
-hr{
-    width: 2.5rem;
-   border: 0.5px solid rgb(127, 127, 127);
-    margin-bottom: 1rem;
-}
-.footercopyright{
-    font-family: "Greycliff";
-    font-weight: 400;
-    color: white;
-    padding: 3rem 4rem;
-    font-size: 0.75em;
-}
-.alink{
-    font-family: "Greycliff";
-    font-weight: 400;
-    text-decoration: none;
-    color: rgb(242, 242, 242);
-    font-size:1.25em;
-}
-.alink:hover{
-    cursor: pointer;
-    color: rgb(191, 191, 191);
-}
-.alinkspace{
-    font-family: "Greycliff";
-    font-weight: 400;
-    margin-right: 1rem;
+.rightside {
+  text-align: right;
 }
 
-.linksgrp2{
-    font-family: "Greycliff";
-    font-weight: 400;
-    margin-top: 1.5rem;
-    
+.footerheading1 {
+  font-family: "Greycliff";
+  font-weight: 400;
+  color: white;
+  font-size: 1.5em;
 }
-.linksgrp1{
-    font-family: "Greycliff";
-    font-weight: 400;
-    margin-top: 3rem;
+.footsec2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.section {
+  padding: 20rem 6rem 0rem 6rem;
+}
+hr {
+  width: 2.5rem;
+  border: 0.5px solid rgb(127, 127, 127);
+  margin-bottom: 1rem;
+}
+.footercopyright {
+  font-family: "Greycliff";
+  font-weight: 400;
+  color: white;
+  padding: 3rem 4rem;
+  font-size: 0.75em;
+}
+.alink {
+  font-family: "Greycliff";
+  font-weight: 400;
+  text-decoration: none;
+  color: rgb(242, 242, 242);
+  font-size: 1.25em;
+}
+.alink:hover {
+  cursor: pointer;
+  color: rgb(191, 191, 191);
+}
+.alinkspace {
+  font-family: "Greycliff";
+  font-weight: 400;
+  margin-right: 1rem;
 }
 
-.trfmail{
-    font-family: "Greycliff";
-    font-weight: 400;
-    margin-bottom: 0.7rem;
+.linksgrp2 {
+  font-family: "Greycliff";
+  font-weight: 400;
+  margin-top: 1.5rem;
 }
-.trfmoblieno{
-    font-family: "Greycliff";
-    font-weight: 400;
-    margin-bottom: 0.7rem;
-}
-
-@media only screen and (max-width: 990px){
-    .alink{
-        font-size: 1.1em;
-    }
-    .Footertextcolor{
-        font-size: 1.1em;
-    }
-    .maindiv{
-        padding-right: 20px;
-        padding-left: 20px;
-    }
+.linksgrp1 {
+  font-family: "Greycliff";
+  font-weight: 400;
+  margin-top: 3rem;
 }
 
-@media only screen and (max-width: 870px){
-    .alink{
-        font-size: 1em;
-    }
-    .Footertextcolor{
-        font-size: 1em;
-    }
-   
+.trfmail {
+  font-family: "Greycliff";
+  font-weight: 400;
+  margin-bottom: 0.7rem;
+}
+.trfmoblieno {
+  font-family: "Greycliff";
+  font-weight: 400;
+  margin-bottom: 0.7rem;
+}
+
+@media only screen and (max-width: 990px) {
+  .alink {
+    font-size: 1.1em;
+  }
+  .Footertextcolor {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .alink {
+    font-size: 1em;
+  }
+  .Footertextcolor {
+    font-size: 1em;
+  }
 }
 
 @media only screen and (max-width: 780px) {
-    .footsec2{
-        display: flex;
-        flex-direction: column;
-        margin-top:3rem;   
-    }
-    .rightside{
-        text-align:left;
-    }
-    
+  .footsec2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
   }
+  .rightside {
+    text-align: left;
+  }
+}
 
-  @media only screen and (max-width: 400px) { 
-    #facebooklink{
-        
+@media only screen and (max-width: 400px) {
+  #facebooklink {
     position: relative;
     top: 1rem;
-    }
   }
+}

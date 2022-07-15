@@ -34,5 +34,27 @@
     width: 100%;
 } */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 575px) {
+  .Roboconsec1 {
+    height: 40vh;
+    
+  }
+  .RoboconSec1heading1{
+    padding-bottom: 50px;
+  }
+  .RoboconSec1firstsec{
+    height: 40vh;
+  }
+  .RoboconSec1firstsec::before{
+    content: '';
+    background-image: url('../../assets/RoboconBgImg1.png'),linear-gradient(rgba(0, 0, 0, 0.1), rgb(0, 0, 0));       
+    background-size: 100vw 40vh;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+  }
 }
