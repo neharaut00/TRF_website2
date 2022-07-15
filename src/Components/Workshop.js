@@ -227,7 +227,7 @@ export default class Workshop extends Component {
             fontSize: "1em",
             textAlign: "center",
             zIndex: "3000",
-            paddingTop: "17px",
+            paddingTop: "18px",
           }}
         >
           {" "}
