@@ -32,24 +32,25 @@ function Footer() {
               className="socialmedialinks
              linksgrp1"
             >
-              <a className="alink" href="https://www.google.com/">
+              <a className="alink" href="https://www.twitter.com/">
                 Twitter
               </a>
               <span className="alinkspace"> </span>
-              <a className="alink" href="https://www.google.com/">
+              <a className="alink" href="https://www.youtube.com/">
                 Youtube
               </a>
             </p>
             <p className="socialmedialinks linksgrp2">
-              <a className="alink" href="https://www.google.com/">
+              <a className="alink" href="https://www.instagram.com/vitpunerobotics/?hl=en/">
                 Intagram
               </a>
               <span className="alinkspace"> </span>
-              <a className="alink" href="https://www.google.com/">
+              <a className="alink" href="https://www.linkedin.com/company/the-robotics-forum/?originalSubdomain=in">
                 Linkedin
               </a>
               <span className="alinkspace"> </span>
-              <a className="alink" id="facebooklink" href="https://www.google.com/">
+              <a className="alink" id="facebooklink" href="https://www.facebook.com/trfvit/"
+              >
                 Facebook
               </a>
             </p>
