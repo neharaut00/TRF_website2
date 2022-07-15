@@ -7,6 +7,7 @@ import HomePage from "./Components/HomePage.js";
 import Achievements from "./Components/Achievements.js";
 import Workshop from "./Components/Workshop.js";
 import Robocon from "./Components/Robocon.js";
+import Recruitment from "./Components/Recruitment.js";
 import Team from './Components/Team.js';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -36,7 +37,7 @@ const App = () => {
           <Route path="/roboccon" element={<Robocon />} />
           <Route path="/blogs" element={<HomePage />} />
           <Route path="/projects" element={<Team />} />
-          <Route path="/events" element={<HomePage />} />
+          <Route path="/events" element={<Recruitment />} />
           <Route path="/workshops" element={<Workshop />} />
           <Route path="/workshops/robonext" element={<HomePage />} />
           <Route path="/workshops/robospark" element={<HomePage />} />

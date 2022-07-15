@@ -1,0 +1,228 @@
+.recruitment-row {
+  padding: 100px 80px 50px 80px;
+}
+
+.recruitment-heading {
+  margin-top: 100px;
+}
+
+.Heading {
+  font-family: "Joyride";
+  color: white;
+  font-size: 3em;
+  text-align: center;
+}
+
+.subHeading {
+  font-family: "GreyCliff";
+  font-size: 1.2em;
+  margin-left: 20%;
+  color: #a4e5e5;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 100px;
+  text-align: center;
+  width: 60%;
+}
+
+.recruitment-info {
+  font-family: "GreyCliff";
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 0.7);
+  padding-right: 80px;
+}
+
+.info-heading {
+  padding-top: 30px;
+}
+
+.recruitment-form-col {
+  padding: 0;
+}
+
+.recruitment-form {
+  padding-left: 50px;
+  border-left: 1px solid #a4e5e5;
+}
+
+input[type="email"],
+textarea,
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  resize: vertical;
+  color: white;
+  margin-top: 6px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  display: block;
+  border: none;
+  color: white;
+  padding-top: 30px;
+}
+
+.input-field:first-child {
+  padding-top: 0px;
+}
+
+.checklabel {
+  display: inline;
+  padding-top: 0px;
+}
+
+/* input[type="checkbox"]{
+   
+} */
+
+form.recruitment-form input[type="submit"] {
+  display: none;
+  float: right;
+}
+
+svg.submit-btn {
+  width: 210px;
+  height: 77px;
+}
+
+svg.submit-btn:hover {
+  filter: sepia(100%) grayscale(100%);
+}
+
+.submitbtn-div {
+  display: block;
+  float: right;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 978px) {
+  .recruitment-row {
+    padding: 100px 50px 50px 50px;
+  }
+
+  svg.getintouch {
+    height: 281px;
+    width: 231px;
+  }
+  svg.submit-btn {
+    width: 200px;
+    height: 67px;
+  }
+}
+
+@media screen and (max-width: 918px) {
+  /* .Heading {
+    font-size: 2.25em;
+  }
+
+  .subHeading {
+    font-size: 1.5em;
+  } */
+
+  svg.submit-btn {
+    width: 190px;
+    height: 57px;
+  }
+}
+
+@media screen and (max-width: 858px) {
+  /* .Heading {
+    font-size: 2em;
+  }
+
+  .subHeading {
+    font-size: 1.25em;
+  } */
+
+  svg.submit-btn {
+    width: 160px;
+    height: 67px;
+  }
+}
+
+@media screen and (max-width: 798px) {
+  /* .Heading {
+    font-size: 1.75em;
+  } */
+
+  .recruitment-form {
+    font-size: 1em;
+  }
+
+  /* .subHeading {
+    font-size: 1em;
+  } */
+
+  svg.submit-btn {
+    width: 140px;
+    height: 47px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .submitbtn-div {
+    display: block;
+    float: left;
+    padding-top: 30px;
+  }
+
+  .Heading{
+    font-size: 2em;
+  }
+
+  .recruitment-row {
+    padding: 100px 30px 50px 30px;
+  }
+
+  .subHeading{
+    width: 100%;
+    margin-left: 0%;
+
+  }
+  .recruitment-info {
+    font-size: 1em;    
+    padding-right: 50px;
+  }
+  
+}
+
+@media screen and (max-width: 520px){
+    .recruitment-info {
+        font-size: 1em;  
+        border-left: 1px solid #a4e5e5;  
+        padding-right: 5px;
+      }
+
+      .subHeading{
+        margin-bottom: 50px;
+      }
+
+      .recruitment-form{
+        margin-top: 50px;
+        padding-left: 5px;
+        border-left: none;
+        
+      }
+}
+
+/* @media screen and (max-width: 507px) {
+  .recruitment-form {
+    padding-left: 0px;
+  }
+
+  
+}
+
+@media screen and (max-width: 470px) {
+  .recruitment-form {
+    padding-left: 0px;
+  }
+
+  .recruitment-form-col {
+    display: block;
+    justify-content: center;
+  }
+} */
