@@ -279,11 +279,12 @@ svg.know-more-btn {
 @media only screen and (max-width: 840px) {
   .Workshop-main-heading-mob-view {
     display: block;
+    
   }
 
-  .mob-view {
+  h1.mob-view {
     font-family: "Joyride";
-    font-size: 7em;
+    font-size: 6em;
     font-weight: 400;
     color: white;
   }
@@ -366,7 +367,7 @@ svg.know-more-btn {
 }
 
 @media only screen and (max-width: 640px) {
-  .mob-view {
+  h1.mob-view {
     font-size: 6em;
   }
 }
@@ -389,8 +390,8 @@ svg.know-more-btn {
   .Workshop_No {
     font-size: 8em;
   }
-  .mob-view {
-    font-size: 5em;
+  h1.mob-view {
+    font-size: 4.8em;
   }
   .Workshop-subheading {
     width: 70%;
@@ -414,7 +415,7 @@ svg.know-more-btn {
   .Workshop_No {
     font-size: 6em;
   }
-  .mob-view {
+  h1.mob-view {
     font-size: 4.5em;
   }
   .Workshop-text-container {
@@ -430,7 +431,7 @@ svg.know-more-btn {
   .Workshop_No {
     font-size: 6em;
   }
-  .mob-view {
+  h1.mob-view {
     font-size: 4em;
   }
   .Workshop-text-container {
@@ -455,7 +456,7 @@ svg.know-more-btn {
     max-width: 16em;
     margin-left: 50px;
   }
-  .mob-view {
+  h1.mob-view {
     font-size: 3em;
   }
   .Workshop-subheading {
