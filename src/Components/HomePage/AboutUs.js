@@ -15,7 +15,7 @@ function AboutUs() {
     >
       <Row style={{ margin: "0px" }} className="justify-content-md-center">
         <Col style={{ padding: "0px" }} lg={{ span: 2.5, offset: 1.5 }} md={6}>
-          <div className="ImageDiv-neha" data-aos="fade-right">
+          <div className="ImageDiv-neha" data-aos="fade-right" >
             <Tilt
               className="Tilt-neha"
               options={{ max: 25, reverse: true, scale: 1 }}

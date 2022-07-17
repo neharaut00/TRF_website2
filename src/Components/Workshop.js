@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "../assets/Workshop_images/Robonext.png";
 import "../assets/Workshop_images/Robospark.png";
 import "../assets/Workshop_images/Robodroid.png";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export default class Workshop extends Component {
   constructor() {
@@ -75,6 +75,7 @@ export default class Workshop extends Component {
           <h1
             data-aos="zoom-in-down"
             data-aos-duration="800"
+            data-aos-once="true"
             className="Workshop_No"
           >
             0{card.id}
@@ -96,10 +97,10 @@ export default class Workshop extends Component {
               {card.description}
             </p>
           </div>
-          <Link to={`/workshops/${card.more}`} key={card.id}>
+          {/* <Link to={`/workshops/${card.more}`} key={card.id}>
             <button>
               <svg className="know-more-btn" viewBox="0 0 210 77">
-                {/* <a href="#"> */}
+                
                 <rect width={210} height={77} fill="black" />
 
                 <path d="M0 0H24L0 24V0Z" fill="#ffff" />
@@ -115,10 +116,10 @@ export default class Workshop extends Component {
                 >
                   Know More
                 </text>
-                {/* </a> */}
+               
               </svg>
             </button>
-          </Link>
+          </Link> */}
         </div>
       );
     });
@@ -192,13 +193,13 @@ export default class Workshop extends Component {
             style={{ zIndex: "3000000", backgroundColor: "transparent" }}
           >
             <h1
-              className="mob-view"
+              className="workshop-mob-view"
               style={{ zIndex: "3000000", backgroundColor: "transparent" }}
             >
               wOrk
             </h1>
             <h1
-              className="mob-view"
+              className="workshop-mob-view"
               style={{ zIndex: "3000000", backgroundColor: "transparent" }}
             >
               shOps
@@ -221,7 +222,7 @@ export default class Workshop extends Component {
           })} */}
           {this.sliders()}
         </Slider>
-        <p
+        {/* <p
           className="drag-text"
           style={{
             fontSize: "1em",
@@ -232,7 +233,7 @@ export default class Workshop extends Component {
         >
           {" "}
           Drag to see more
-        </p>
+        </p> */}
       </div>
     );
   }

@@ -98,6 +98,8 @@ hr {
   margin-bottom: 0.7rem;
 }
 
+/*! Media Queries */
+
 @media only screen and (max-width: 990px) {
   .alink {
     font-size: 1.1em;

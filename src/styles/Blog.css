@@ -405,10 +405,17 @@ li:first-child > .custom-paging {
   }
 }
 
+
+@media only screen and (max-width: 390px) {
+  h1.mob-view {
+    font-size: 3.5em;
+  }
+}
 @media only screen and (max-width: 370px) {
   .blog_card {
     max-width: 13em;
   }
+  
 }
 @media only screen and (max-width: 350px) {
   

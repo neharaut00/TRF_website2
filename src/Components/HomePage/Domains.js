@@ -7,7 +7,7 @@ function Domains() {
       <div className="Domains">
       <div className="Domains-Container">
           <div className="DomainImage">
-              <img src={Group} data-aos="zoom-in"alt="Domain" className="img-fluid domain-img"/>
+              <img src={Group} data-aos="zoom-in" data-aos-once="true" alt="Domain" className="img-fluid domain-img"/>
           </div>
           <div className="Elex-domain">
             <h1 data-aos="fade-left" data-aos-once="true" className="Domain-heading-elex">01 electronics</h1>

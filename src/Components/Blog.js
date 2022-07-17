@@ -146,7 +146,9 @@ export default class Blog extends Component {
       centerPadding: "60px",
       dots: true,
       slidesToShow: 3,
+      autoplay: false,
       slidesToScroll: 3,
+      pauseOnHover: false,
       arrows: true,
 
       appendDots: (dots) => (
@@ -166,6 +168,9 @@ export default class Blog extends Component {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
+            autoplay: true,
+            speed: 2000,
+            pauseOnHover: true,
             swipeToSlide: true,
             infinite: true,
             dots: true,
@@ -176,6 +181,9 @@ export default class Blog extends Component {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
+            autoplay: true,
+            speed: 2000,
+            pauseOnHover: true,
             swipeToSlide: true,
             initialSlide: 1,
           },

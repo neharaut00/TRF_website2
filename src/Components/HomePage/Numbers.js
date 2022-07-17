@@ -25,7 +25,7 @@ function Numbers() {
               </h1>
             </div>
             <div>
-              <p data-aos="fade-up" className="Numbers-desc">
+              <p data-aos="fade-up" className="Numbers-desc" data-aos-once="true">
                 Club Members
               </p>
             </div>
@@ -38,7 +38,7 @@ function Numbers() {
               </h1>
             </div>
             <div>
-              <p data-aos="fade-up" className="Numbers-desc">
+              <p data-aos="fade-up" className="Numbers-desc" data-aos-once="true">
                 Team members
               </p>
             </div>
@@ -51,7 +51,7 @@ function Numbers() {
               </h1>
             </div>
             <div>
-              <p data-aos="fade-up" className="Numbers-desc">
+              <p data-aos="fade-up" className="Numbers-desc" data-aos-once="true">
                 Alumni
               </p>
             </div>

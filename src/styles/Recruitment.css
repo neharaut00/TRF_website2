@@ -1,3 +1,7 @@
+.recruitment-main-div{
+  overflow: hidden;
+}
+
 .recruitment-row {
   padding: 100px 80px 50px 80px;
 }
@@ -97,6 +101,8 @@ svg.submit-btn:hover {
   float: right;
   padding-top: 30px;
 }
+
+/*! Media Queries */
 
 @media screen and (max-width: 978px) {
   .recruitment-row {

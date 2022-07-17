@@ -28,26 +28,26 @@ function NavBar() {
           </Link>
         </li>
         <li onClick={navToggle} className="nav__item">
-          <Link to="/achievements" className="nav__link">
-            Achievements
+          <Link to="/blogs" className="nav__link">
+            Blogs
           </Link>
         </li>
         <li onClick={navToggle} className="nav__item">
-          <Link to="/blogs" className="nav__link">
-            Blogs
+          <Link to="/achievements" className="nav__link">
+          Achievements
           </Link>
         </li>
         <Link to="/" className="nav__brand">
         TRF
       </Link>   
         <li onClick={navToggle} className="nav__item">
-          <Link to="/projects" className="nav__link">
-            Projects
+          <Link to="/recruitment" className="nav__link">
+            Recruitment
           </Link>
         </li>
         <li onClick={navToggle} className="nav__item">
-          <Link to="/events" className="nav__link">
-            Events
+          <Link to="/team" className="nav__link">
+            Team
           </Link>
         </li>
         <li onClick={navToggle} className="nav__item">

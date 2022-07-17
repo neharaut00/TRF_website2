@@ -37,8 +37,8 @@ const App = () => {
           <Route path="/achievements" element={<Achievements />} />
           <Route path="/roboccon" element={<Robocon />} />
           <Route path="/blogs" element={<Blogs />} />
-          <Route path="/projects" element={<Team />} />
-          <Route path="/events" element={<Recruitment />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/recruitment" element={<Recruitment />} />
           <Route path="/workshops" element={<Workshop />} />
           <Route path="/workshops/robonext" element={<HomePage />} />
           <Route path="/workshops/robospark" element={<HomePage />} />
