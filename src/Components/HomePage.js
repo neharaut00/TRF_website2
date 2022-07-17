@@ -6,7 +6,7 @@ import Faculty from "./HomePage/Faculty.js";
 import Intro from "./HomePage/Intro.js";
 import GetInTouch from "./HomePage/GetInTouch";
 // import ThreeDModel from './HomePage/ThreeDModel.js'
-import "./HomePage.css";
+import "../styles/HomePage.css";
 
 function HomePage() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import Tilt from "react-tilt";
-import image from "../../assets/Intro_robot.png";
+import image from "../../assets/HomePage_images/Intro_robot.png";
 import { HashLink as Link } from "react-router-hash-link";
 // import Eclipse from '../../assets/Intro-Eclipse.png'
 import "./Intro.css";

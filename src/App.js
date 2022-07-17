@@ -15,7 +15,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import ScrollToTop from "./Components/ScrollToTop.js";
+import ScrollToTop from "./helper/ScrollToTop.js";
 
 const App = () => {
   useEffect(() => {
@@ -23,7 +23,7 @@ const App = () => {
       duration: 1000,
       mirror: true,
       debounceDelay: 100,
-      throttleDelay: 150,
+      throttleDelay: 150,      
       
     });
   }, []);

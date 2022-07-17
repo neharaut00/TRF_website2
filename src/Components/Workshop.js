@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import "./Workshop.css";
-import WorkshopImg from "../assets/Workshop.png";
+import "../styles/Workshop.css";
+import WorkshopImg from "../assets/Workshop_images/Workshop.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../assets/Robonext.png";
-import "../assets/Robospark.png";
-import "../assets/Robodroid.png";
+import "../assets/Workshop_images/Robonext.png";
+import "../assets/Workshop_images/Robospark.png";
+import "../assets/Workshop_images/Robodroid.png";
 import { Link } from "react-router-dom";
 
 export default class Workshop extends Component {
@@ -19,7 +19,7 @@ export default class Workshop extends Component {
           title: "ROBONEXT",
           description:
             "The robonext workshop is a six-week long workshop that is divided into two parts: six parts for theory and two parts for practical implementation. The concepts are taught by the members of TRF. Apart from that, guest lectures are delivered for some topics, with speakers including past team members and qualified professors.",
-          src: require("../assets/Robonext.png"),
+          src: require("../assets/Workshop_images/Robonext.png"),
           more: "robonext",
         },
         {
@@ -27,7 +27,7 @@ export default class Workshop extends Component {
           title: "ROBOSPARK",
           description:
             "The robospark workshop started with the introduction of the 10-year-old legacy of TRF. The attendees were from three domains - Mech Programming and Elex. All the attendees had hands-on experience. The attendees conducted experiments on all the devices and mechanisms which they learnt in the online workshop.",
-          src: require("../assets/Robospark.png"),
+          src: require("../assets/Workshop_images/Robospark.png"),
           more: "robospark",
         },
 
@@ -36,7 +36,7 @@ export default class Workshop extends Component {
           title: "ROBODROID",
           description:
             "Our college's aspiring engineers are invited to attend the Robodroid workshop. It is a workshop as well as a competition held every year in which the budding engineers are introduced to the legacy of TRF. The workshop lasts for around eight days and the students participate in a variety of theory and lab sessions to gain practical experience.",
-          src: require("../assets/Robodroid.png"),
+          src: require("../assets/Workshop_images/Robodroid.png"),
           more: "robodroid",
         },
         {
@@ -44,7 +44,7 @@ export default class Workshop extends Component {
           title: "ROBOVISION",
           description:
             "The robonext workshop is a six-week long workshop that is divided into two parts: six parts for theory and two parts for practical implementation. The concepts are taught by the members of TRF. Apart from that, guest lectures are delivered for some topics, with speakers including past team members and qualified professors.",
-          src: require("../assets/Robospark.png"),
+          src: require("../assets/Workshop_images/Robospark.png"),
           more: "robovision",
         },
         {
@@ -52,7 +52,7 @@ export default class Workshop extends Component {
           title: "LEVEL 1",
           description:
             "The robospark workshop started with the introduction of the 10-year-old legacy of TRF. The attendees were from three domains - Mech Programming and Elex. All the attendees had hands-on experience. The attendees conducted experiments on all the devices and mechanisms which they learnt in the online workshop.",
-          src: require("../assets/Robodroid.png"),
+          src: require("../assets/Workshop_images/Robodroid.png"),
           more: "level1",
         },
         {
@@ -60,7 +60,7 @@ export default class Workshop extends Component {
           title: "LEVEL 2",
           description:
             "Our college's aspiring engineers are invited to attend the Robodroid workshop. It is a workshop as well as a competition held every year in which the budding engineers are introduced to the legacy of TRF. The workshop lasts for around eight days and the students participate in a variety of theory and lab sessions to gain practical experience.",
-          src: require("../assets/Robonext.png"),
+          src: require("../assets/Workshop_images/Robonext.png"),
           more: "level2",
         },
       ],

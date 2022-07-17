@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import "./Blog.css";
-import blogImg from "../assets/sideimage.png";
+import "../styles/Blog.css";
+import blogImg from "../assets/Blogs_images/sideimage.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Img1 from "../assets/CarouselImg1.png";
-import Img2 from "../assets/CarouselImg2.png";
-import Img3 from "../assets/CarouselImg3.png";
+import Img1 from "../assets/Blogs_images/CarouselImg1.png";
+import Img2 from "../assets/Blogs_images/CarouselImg2.png";
+import Img3 from "../assets/Blogs_images/CarouselImg3.png";
 import { HashLink as Link } from "react-router-hash-link";
 // import { Link } from "react-router-dom";
 

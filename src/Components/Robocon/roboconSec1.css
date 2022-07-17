@@ -13,7 +13,7 @@
 
 .RoboconSec1firstsec::before{
   content: '';
-  background-image: url('../../assets/RoboconBgImg1.png'),linear-gradient(rgba(0, 0, 0, 0.1), rgb(0, 0, 0));       
+  background-image: url('../../assets/Robocon_images/RoboconBgImg1.png'),linear-gradient(rgba(0, 0, 0, 0.1), rgb(0, 0, 0));       
   background-size: cover;
   position: absolute;
   top: 0px;
@@ -47,7 +47,7 @@
   }
   .RoboconSec1firstsec::before{
     content: '';
-    background-image: url('../../assets/RoboconBgImg1.png'),linear-gradient(rgba(0, 0, 0, 0.1), rgb(0, 0, 0));       
+    background-image: url('../../assets/Robocon_images/RoboconBgImg1.png'),linear-gradient(rgba(0, 0, 0, 0.1), rgb(0, 0, 0));       
     background-size: 100vw 40vh;
     background-repeat: no-repeat;
     position: absolute;

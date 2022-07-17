@@ -324,7 +324,7 @@
      }     
      .Domains-Container::before{
         content: '';
-        background-image: url('../../assets/Group.png');        
+        background-image: url('../../assets/HomePage_images/Group.png');        
         background-size: contain;
         background-repeat: no-repeat;        
         position: absolute;
@@ -344,7 +344,7 @@
 @media screen and (max-width: 824px){
     .Domains-Container::before{
         content: '';
-        background-image: url('../../assets/Group.png');        
+        background-image: url('../../assets/HomePage_images/Group.png');        
         background-size: contain;
         background-repeat: no-repeat;        
         position: absolute;
@@ -367,7 +367,7 @@
 @media screen and (max-width: 710px){
     .Domains-Container::before{
         content: '';
-        background-image: url('../../assets/Group.png');        
+        background-image: url('../../assets/HomePage_images/Group.png');        
         background-size: contain;
         background-repeat: no-repeat;        
         position: absolute;
@@ -389,7 +389,7 @@
 @media screen and (max-width: 630px){
     .Domains-Container::before{
         content: '';
-        background-image: url('../../assets/Group.png');        
+        background-image: url('../../assets/HomePage_images/Group.png');        
         background-size: contain;
         background-repeat: no-repeat;        
         position: absolute;
@@ -414,7 +414,7 @@
     }
     .Domains-Container::before{
         content: '';
-        background-image: url('../../assets/Group.png');        
+        background-image: url('../../assets/HomePage_images/Group.png');        
         background-size: contain;
         background-repeat: no-repeat;        
         position: absolute;
@@ -437,7 +437,7 @@
 @media screen and (max-width: 560px){    
     .Domains-Container::before{
         content: '';
-        background-image: url('../../assets/Group.png');        
+        background-image: url('../../assets/HomePage_images/Group.png');        
         background-size: contain;
         background-repeat: no-repeat;        
         position: absolute;
@@ -473,7 +473,7 @@
      }     
      .Elex-domain::before{
         content: '';
-        background-image: url('../../assets/Electronics.png');        
+        background-image: url('../../assets/HomePage_imagesElectronics.png');        
         background-repeat: no-repeat;   
         background-repeat: contain;            
         position: absolute;
@@ -491,7 +491,7 @@
      }     
      .Mech-domain::before{
         content: '';
-        background-image: url('../../assets/Mechanics.png');        
+        background-image: url('../../assets/HomePage_imagesMechanics.png');        
         background-repeat: no-repeat;        
         position: absolute;
         background-repeat: contain;             
@@ -510,7 +510,7 @@
      }     
      .Prog-domain::before{
         content: '';
-        background-image: url('../../assets/Software.png');        
+        background-image: url('../../assets/HomePage_imagesSoftware.png');        
         background-repeat: no-repeat;      
         background-repeat: contain;             
         position: absolute;

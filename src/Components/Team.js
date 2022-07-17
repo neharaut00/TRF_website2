@@ -1,6 +1,6 @@
 import React from "react";
-import "./Team.css";
-import TeamImg from "../assets/team.png";
+import "../styles/Team.css";
+import TeamImg from "../assets/Team_images/team.png";
 import TestImg1 from "../assets/Team_images/TestImage1.jpg";
 import TestImg2 from "../assets/Team_images/TestImage2.jpg";
 import TestImg3 from "../assets/Team_images/TestImage3.jpg";

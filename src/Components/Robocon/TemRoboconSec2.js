@@ -1,8 +1,8 @@
 import React from "react";
 import "./tempsec2.css";
-import RoboconImg2 from "../../assets/RoboconImg2.png";
-import RoboconImg3 from "../../assets/RoboconImg3.png";
-import RoboconImg4 from "../../assets/RoboconImg4.png";
+import RoboconImg2 from "../../assets/Robocon_images/RoboconImg2.png";
+import RoboconImg3 from "../../assets/Robocon_images/RoboconImg3.png";
+import RoboconImg4 from "../../assets/Robocon_images/RoboconImg4.png";
 
 export default function TemRoboconSec2() {
   return (

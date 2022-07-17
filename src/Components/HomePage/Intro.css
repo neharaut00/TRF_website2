@@ -171,7 +171,7 @@ svg.intro-Rect-neha {
   }
   .intro-row::before {
     content: "";
-    background-image: url("../../assets/Intro_robot.png");
+    background-image: url("../../assets/HomePage_images/Intro_robot.png");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -190,7 +190,7 @@ svg.intro-Rect-neha {
   }
 
   .intro-Container {
-    background-image: url("../../assets/Intro_robot.png");
+    background-image: url("../../assets/HomePage_images/Intro_robot.png");
   }
   svg.intro-svg {
     display: none;

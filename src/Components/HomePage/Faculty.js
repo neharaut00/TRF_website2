@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import "./Faculty.css";
 import { Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import image from "../../assets/faculty.png";
-import khare from "../../assets/HMKhare.jpeg";
-import kotwal from "../../assets/GNKotwal.jpeg";
-import patwardhan from "../../assets/MMPatwardhan.jpg";
+import khare from "../../assets/HomePage_images/HMKhare.jpeg";
+import kotwal from "../../assets/HomePage_images/GNKotwal.jpeg";
+import patwardhan from "../../assets/HomePage_images/MMPatwardhan.jpg";
 import { useEffect } from "react";
 
 function Faculty() {

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Row, Col } from "react-bootstrap";
-import "./Recruitment.css";
+import "../styles/Recruitment.css";
 
 function Recruitment() {
   const [form, setForm] = useState({

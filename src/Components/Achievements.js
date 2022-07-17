@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Achievements.css";
+import "../styles/Achievements.css";
 import { Row, Col } from "react-bootstrap";
 import A1 from "../assets/Achievements_images/A1.png";
 import A2 from "../assets/Achievements_images/A2.1.png";
