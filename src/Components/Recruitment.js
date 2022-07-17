@@ -24,7 +24,7 @@ function Recruitment() {
 
   let name, value;
   const Input = (e) => {
-    console.log(e);
+    // console.log(e);
     name = e.target.name;
     value = e.target.value;
     setForm({ ...form, [name]: value });
@@ -38,56 +38,24 @@ function Recruitment() {
     }
     setForm({ ...form, [name]: value });
   };
-
   const SendData = async (e) => {
     e.preventDefault();
-    const {
-      name,
-      email,
-      phone,
-      year,
-      prn,
-      branch,
-      division,
-      rollno,
-      ele,
-      mech,
-      prog,
-      admin,
-      whytrf,
-      technicalskills,
-      experience,
-    } = form;
-    const res = await fetch("/savedata", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
+    const { name, email, phone, year, prn, branch, division, rollno, ele, mech, prog, admin, whytrf, technicalskills, experience } = form;
+    const res = await fetch("https://trfrecruitment2022backend.herokuapp.com/savedata", {
+      method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        name,
-        email,
-        phone,
-        year,
-        prn,
-        branch,
-        division,
-        rollno,
-        ele,
-        mech,
-        prog,
-        admin,
-        whytrf,
-        technicalskills,
-        experience,
-      }),
+        name, email, phone, year, prn, branch, division, rollno, ele, mech, prog, admin, whytrf, technicalskills, experience
+      })
     });
     const data = await res.json();
     if (!data) {
       window.alert("Form submission failed");
-      console.log("Form submission failed");
+      // console.log("Form submission failed");
     } else {
       window.alert("Form filled");
-      console.log("Form filled");
+      // console.log("Form filled");
     }
-  };
+  }
   return (
     <div className="recruitment-main-div">
       <Row className="recruitment-row">
@@ -126,7 +94,7 @@ function Recruitment() {
         </Col>
         <Col className="recruitment-form-col" sm={6} data-aos="fade-left" data-aos-once="true">
           <form
-            className="recruitment-form"            
+            className="recruitment-form"
             onSubmit={SendData}
           >
             <label className="input-field">Full Name(Name Surname) :</label>
