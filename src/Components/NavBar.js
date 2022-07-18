@@ -19,7 +19,7 @@ function NavBar() {
   return (
     <div className="Navbar" >
     <nav className="nav">
-      <Link to="/" onClick={navToggle} className="nav__brand_mobile">
+      <Link to="/" className="nav__brand_mobile">
         <img src={logo} alt="logo" height="40px"></img>
       </Link>      
       <ul className={active}>
