@@ -169,3 +169,14 @@ hr {
   }
  
 }
+
+@media only screen and (max-width: 350px) {
+  .footercopyright {    
+    padding: 3rem 2rem;
+  }
+
+  .section {
+    padding: 20rem 2rem 0rem 2rem;
+  }
+ 
+}
