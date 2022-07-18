@@ -2,14 +2,6 @@ import React from "react";
 import { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import "../styles/Recruitment.css";
-// var email_error = document.getElementById("input-email");
-//   email_error.oninvalid = function (e) { e.target.setCustomValidity("Please enter the valid college email id"); };
-//   var mobile_error = document.getElementById("input-mobile");
-//   mobile_error.oninvalid = function (e) { e.target.setCustomValidity("Please enter valid 10 digit mobile no."); };
-//   var pr_error = document.getElementById("input-prn");
-//   pr_error.oninvalid = function (e) { e.target.setCustomValidity("Please enter valid 8 digit PR number"); };
-//   var rollno_error = document.getElementById("input-rollno");
-//   rollno_error.oninvalid = function (e) { e.target.setCustomValidity("Please enter valid 2 or 3 digit roll number"); };
 
 function Recruitment() {
   const [form, setForm] = useState({
@@ -100,6 +92,30 @@ function Recruitment() {
       // console.log("Form filled");
     }
   };
+
+  const [email_focused, email_setFocused] = useState(false);
+ 
+  const email_handleFocus = (e) => {
+    email_setFocused(true);
+  };
+
+  const [mobile_focused, mobile_setFocused] = useState(false);
+ 
+  const mobile_handleFocus = (e) => {
+    mobile_setFocused(true);
+  };
+
+  const [prn_focused, prn_setFocused] = useState(false);
+ 
+  const prn_handleFocus = (e) => {
+    prn_setFocused(true);
+  };
+
+  const [rollno_focused, rollno_setFocused] = useState(false);
+ 
+  const rollno_handleFocus = (e) => {
+    rollno_setFocused(true);
+  };
   return (
     <div className="recruitment-main-div">
       <Row className="recruitment-row">
@@ -159,12 +175,15 @@ function Recruitment() {
               id="input-email"
               name="email"
               onChange={Input}
+              onBlur={email_handleFocus}
+              focused={email_focused.toString()}
               pattern="[a-z0-9._%+-]+@vit.edu"
               onInvalid="alert('You must fill out the form!');"
               errorMessage="Please enter a valid college email id"
               title="vit.edu email id only"
               required
             />
+            <p className="validation-error email">Please enter a valid college email id</p>
             <br />
             <label className="input-field">Mobile No.(Whatsapp) :</label>
             <br />
@@ -173,11 +192,14 @@ function Recruitment() {
               id="input-mobile"
               name="phone"
               onChange={Input}
+              onBlur={mobile_handleFocus}
+              focused={mobile_focused.toString()}
               pattern="[0-9]{10}"
               errorMessage="Please enter a valid 10 digit mobile number"
               title="10 digit valid phone no."
               required
             />
+            <p className="validation-error mobile">Please enter a valid 10 digit phone number</p>
             <br />
             <label className="input-field">Year of Study(AY 2021-22) :</label>
             <br />
@@ -194,11 +216,14 @@ function Recruitment() {
               id="input-prn"
               name="prn"
               onChange={Input}
+              onBlur={prn_handleFocus}
+              focused={prn_focused.toString()}
               pattern="[0-9]{8}"
               errorMessage="Please enter a valid 8 digit PR number"
               title="Valid prn"
               required
             />
+            <p className="validation-error prn">Please enter a valid 8 digit PR number</p>
             <br />
             <label className="input-field">Branch :</label>
             <br />
@@ -265,11 +290,14 @@ function Recruitment() {
               id="input-rollno"
               name="rollno"
               onChange={Input}
+              onBlur={rollno_handleFocus}
+              focused={rollno_focused.toString()}
               pattern="[0-9]{2,3}"
               errorMessage="Please enter a valid 2 or 3 roll number"
               title="valid roll no."
               required
             />
+            <p className="validation-error rollno">Please enter a valid 2 or 3 roll number</p>
             <br />
             <label className="input-field">
               Domain(you can apply for multiple domains) :

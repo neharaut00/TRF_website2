@@ -102,6 +102,54 @@ svg.submit-btn:hover {
   padding-top: 30px;
 }
 
+/* input:invalid {
+  border: red solid 3px;
+} */
+
+
+.validation-error{
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  display: none;
+}
+
+input:invalid[focused="true"]{
+  border: 1px solid red;
+}
+
+#input-email:invalid[focused="true"] ~ .email{
+  display: block;
+}
+
+#input-prn:invalid[focused="true"] ~ .prn{
+  display: block;
+}
+
+#input-rollno:invalid[focused="true"] ~ .rollno{
+  display: block;
+}
+
+#input-mobile:invalid[focused="true"] ~ .mobile{
+  display: block;
+}
+
+/* input:invalid[focused="false"] ~ .email{
+  display: none;
+}
+
+input:invalid[focused="false"] ~ .prn{
+  display: none;
+}
+
+input:invalid[focused="false"] ~ .rollno{
+  display: none;
+}
+
+input:invalid[focused="false"] ~ .mobile{
+  display: none;
+} */
+
 /*! Media Queries */
 
 @media screen and (max-width: 978px) {
