@@ -288,7 +288,7 @@ Technology that builds powerful Robotics and Software solutions.
           }}
         >
           {" "}
-          Drag to see more
+        
         </p>
       </div>
     );
