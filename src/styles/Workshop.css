@@ -63,7 +63,7 @@ li:first-child > .custom-paging {
 }
 
 .Workshop-text-container {
-  padding-top: 280px;
+  padding-top: 330px;
   padding-left: 100px;
   display: flex;
   flex-direction: column-reverse;
@@ -280,7 +280,7 @@ svg.know-more-btn {
 
 @media only screen and (max-width: 840px) {
   .Workshop-text-container{
-    padding-top:100px;
+    padding-top:350px;
   }
   .Workshop-main-heading-mob-view {
     display: block;
@@ -447,9 +447,9 @@ svg.know-more-btn {
   }
 }
 
-@media only screen and (max-width: 393px) {
+@media only screen and (max-width: 299px) {
   .card {
-    max-width: 13em;
+    max-width: 16em;
     margin-left: 30px;
   }
   .Workshop_No {
