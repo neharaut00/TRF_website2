@@ -39,7 +39,6 @@ function Recruitment() {
     setForm({ ...form, [name]: value });
   };
 
-  
   const SendData = async (e) => {
     e.preventDefault();
     const {
@@ -94,25 +93,25 @@ function Recruitment() {
   };
 
   const [email_focused, email_setFocused] = useState(false);
- 
+
   const email_handleFocus = (e) => {
     email_setFocused(true);
   };
 
   const [mobile_focused, mobile_setFocused] = useState(false);
- 
+
   const mobile_handleFocus = (e) => {
     mobile_setFocused(true);
   };
 
   const [prn_focused, prn_setFocused] = useState(false);
- 
+
   const prn_handleFocus = (e) => {
     prn_setFocused(true);
   };
 
   const [rollno_focused, rollno_setFocused] = useState(false);
- 
+
   const rollno_handleFocus = (e) => {
     rollno_setFocused(true);
   };
@@ -166,7 +165,7 @@ function Recruitment() {
           <form className="recruitment-form" onSubmit={SendData}>
             <label className="input-field">Full Name(Name Surname) :</label>
             <br />
-            <input type="text" name="name" onChange={Input}  required />
+            <input type="text" name="name" onChange={Input} required />
             <br />
             <label className="input-field">Email id(vit.edu) :</label>
             <br />
@@ -183,7 +182,9 @@ function Recruitment() {
               title="vit.edu email id only"
               required
             />
-            <p className="validation-error email">Please enter a valid college email id</p>
+            <p className="validation-error email">
+              Please enter a valid college email id
+            </p>
             <br />
             <label className="input-field">Mobile No.(Whatsapp) :</label>
             <br />
@@ -199,7 +200,9 @@ function Recruitment() {
               title="10 digit valid phone no."
               required
             />
-            <p className="validation-error mobile">Please enter a valid 10 digit phone number</p>
+            <p className="validation-error mobile">
+              Please enter a valid 10 digit phone number
+            </p>
             <br />
             <label className="input-field">Year of Study(AY 2021-22) :</label>
             <br />
@@ -223,7 +226,9 @@ function Recruitment() {
               title="Valid prn"
               required
             />
-            <p className="validation-error prn">Please enter a valid 8 digit PR number</p>
+            <p className="validation-error prn">
+              Please enter a valid 8 digit PR number
+            </p>
             <br />
             <label className="input-field">Branch :</label>
             <br />
@@ -297,23 +302,41 @@ function Recruitment() {
               title="valid roll no."
               required
             />
-            <p className="validation-error rollno">Please enter a valid 2 or 3 roll number</p>
+            <p className="validation-error rollno">
+              Please enter a valid 2 or 3 roll number
+            </p>
             <br />
             <label className="input-field">
               Domain(you can apply for multiple domains) :
             </label>
             <br />
-            <input type="checkbox" name="ele" onChange={Checked} />
-            <label className="input-field checklabel">Electronics</label>
+
+            <label className="input-field checklabel">
+              Electronics
+              <input type="checkbox" name="ele" onChange={Checked} />
+              <span class="checkmark"></span>
+            </label>
             <br />
-            <input type="checkbox" name="mech" onChange={Checked} />
-            <label className="input-field checklabel">Mechanical</label>
+
+            <label className="input-field checklabel">
+              Mechanical
+              <input type="checkbox" name="mech" onChange={Checked} />
+              <span class="checkmark"></span>
+            </label>
             <br />
-            <input type="checkbox" name="prog" onChange={Checked} />
-            <label className="input-field checklabel">Programming</label>
+
+            <label className="input-field checklabel">
+              Programming
+              <input type="checkbox" name="prog" onChange={Checked} />
+              <span class="checkmark"></span>
+            </label>
             <br />
-            <input type="checkbox" name="admin" onChange={Checked} />
-            <label className="input-field checklabel">Admin</label>
+
+            <label className="input-field checklabel">
+              Admin
+              <input type="checkbox" name="admin" onChange={Checked} />
+              <span class="checkmark"></span>
+            </label>
             <br />
             <label className="input-field">
               Why do you want to be a part of TRF? :
