@@ -1,6 +1,7 @@
 .Newsletter-maindiv{
     text-align: center;
-    padding: 10em 6em 2em 6em;
+    margin: 6em 6em 2em 6em;
+    padding-top:4em;
 }
 
 .Newsletter-heading {
