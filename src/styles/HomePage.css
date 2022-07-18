@@ -1,17 +1,21 @@
-*{
-    margin: 0px;
-    margin-top: 0px;
-    padding: 0px;
-    font-size: 16px;
-  }
-  
-  .App {
-    text-align: center;
-    margin: 0px;
-    margin-top: 0px;
-    background-color: #03090C;
-  }
-  
-  .font-face-gm {
-    font-family: "Joyride";
-   }
+* {
+  margin: 0px;
+  margin-top: 0px;
+  padding: 0px;
+  font-size: 16px;
+}
+
+.HomePage-main-container {
+  overflow: hidden;
+}
+
+.App {
+  text-align: center;
+  margin: 0px;
+  margin-top: 0px;
+  background-color: #03090c;
+}
+
+.font-face-gm {
+  font-family: "Joyride";
+}

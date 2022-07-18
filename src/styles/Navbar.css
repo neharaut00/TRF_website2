@@ -169,14 +169,14 @@ a {
   .nav__brand_mobile{
     display: flex;
     justify-content:left;
-    padding-left: 50px;
+    padding-left: 30px;
 }
 
   .nav__menu {
     position: fixed;
     top: 7vh;
     right: 0;
-    height: 90vh;
+    height: 85vh;
     width: 50vw;
     background: #03090C;
     border: 1px;

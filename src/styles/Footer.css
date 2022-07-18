@@ -56,19 +56,24 @@ hr {
   font-family: "Greycliff";
   font-weight: 400;
   color: white;
-  padding: 3rem 4rem;
+  padding: 3rem 6rem;
   font-size: 0.75em;
 }
+
+.socialmedia-names{
+  font-size: 1.25em;
+
+}
+
 .alink {
   font-family: "Greycliff";
   font-weight: 400;
   text-decoration: none;
   color: rgb(242, 242, 242);
-  font-size: 1.25em;
 }
 .alink:hover {
   cursor: pointer;
-  color: rgb(191, 191, 191);
+  color: #a4e5e5;
 }
 .alinkspace {
   font-family: "Greycliff";
@@ -98,10 +103,14 @@ hr {
   margin-bottom: 0.7rem;
 }
 
+.footer-icons {
+  visibility: hidden;
+}
+
 /*! Media Queries */
 
 @media only screen and (max-width: 990px) {
-  .alink {
+  .socialmedia-names {
     font-size: 1.1em;
   }
   .Footertextcolor {
@@ -110,7 +119,7 @@ hr {
 }
 
 @media only screen and (max-width: 870px) {
-  .alink {
+  .socialmedia-names {
     font-size: 1em;
   }
   .Footertextcolor {
@@ -126,6 +135,31 @@ hr {
   }
   .rightside {
     text-align: left;
+  }
+  .footer-icons {
+    visibility: visible;
+    
+  }
+  
+  .footer-icons ::hover{
+    color:#a4e5e5;
+  }
+  .socialmedia-names{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .footercopyright {
+    font-family: "Greycliff";
+    font-weight: 400;
+    color: white;
+    padding: 3rem 4rem;
+    font-size: 0.75em;
+  }
+
+  .section {
+    padding: 20rem 4rem 0rem 4rem;
   }
 }
 

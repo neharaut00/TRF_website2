@@ -4,8 +4,7 @@ import Tilt from "react-tilt";
 import "./AboutUs.css";
 import { Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import Slider from "react-slick";
-import {Link} from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 function AboutUs() {
   return (
@@ -103,7 +102,7 @@ function AboutUs() {
               </div>
             </div>
             <div className="aboutUsButtonContainer" data-aos="zoom-in-up" data-aos-once="true">
-              <Link to="/workshops">
+              <Link to="#newsletter">
               <svg className="aboutUbutton-neha" viewBox="0 0 210 77" cursor={"pointer"}>
                 {/* <a href="#"> */}
                 <rect width={210} height={77} fill="#559083" />

@@ -1,6 +1,7 @@
 import React, { useState }  from 'react'
 import '../styles/Navbar.css';
 import { Link } from 'react-router-dom';
+import logo from "../assets/TRF_logo.png"
 
 function NavBar() {
   const [active, setActive] = useState("nav__menu");
@@ -19,12 +20,12 @@ function NavBar() {
     <div className="Navbar" >
     <nav className="nav">
       <Link to="/" onClick={navToggle} className="nav__brand_mobile">
-        TRF
+        <img src={logo} alt="logo" height="40px"></img>
       </Link>      
       <ul className={active}>
         <li onClick={navToggle} className="nav__item">
           <Link to="/roboccon" className="nav__link">
-            Roboccon
+            Robocon
           </Link>
         </li>
         <li onClick={navToggle} className="nav__item">
@@ -38,7 +39,7 @@ function NavBar() {
           </Link>
         </li>
         <Link to="/" className="nav__brand">
-        TRF
+        <img src={logo} alt="logo" height="40px"></img>
       </Link>   
         <li onClick={navToggle} className="nav__item">
           <Link to="/recruitment" className="nav__link">

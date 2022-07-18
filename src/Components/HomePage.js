@@ -5,19 +5,21 @@ import Domains from "./HomePage/Domains.js";
 import Faculty from "./HomePage/Faculty.js";
 import Intro from "./HomePage/Intro.js";
 import GetInTouch from "./HomePage/GetInTouch";
+import Newsletter from "./HomePage/Newsletter";
 // import ThreeDModel from './HomePage/ThreeDModel.js'
 import "../styles/HomePage.css";
 
 function HomePage() {
   return (
-    <div>
+    <div className="HomePage-main-container">
       {/* <ThreeDModel/> */}
       <Intro />
       <Numbers />
       <AboutUs />
       <Domains />
       <Faculty />
-      <GetInTouch />    
+      <GetInTouch />  
+      <Newsletter/>
     </div>
   );
 }

@@ -4,9 +4,9 @@ import "../styles/Blog.css";
 import blogImg from "../assets/Blogs_images/sideimage.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Img1 from "../assets/Blogs_images/CarouselImg1.png";
-import Img2 from "../assets/Blogs_images/CarouselImg2.png";
-import Img3 from "../assets/Blogs_images/CarouselImg3.png";
+// import Img1 from "../assets/Blogs_images/CarouselImg1.png";
+// import Img2 from "../assets/Blogs_images/CarouselImg2.png";
+// import Img3 from "../assets/Blogs_images/CarouselImg3.png";
 import { HashLink as Link } from "react-router-hash-link";
 // import { Link } from "react-router-dom";
 
@@ -17,59 +17,59 @@ export default class Blog extends Component {
       sliders: [
         {
           id: 1,
-          title: "GAN’s A Picture into the Future",
-          date: "20th March 2020",
+          title: "The Philosophy of Enigma Machine",
+          date: "24th May 2022",
           description:
-            "GANs have a wide range of applications, from the film industry to cybersecurity. Have you ever wondered?",
-          src: Img1,
-          more: "",
+            "The Enigma machine is an encryption instrument that was put up and used to protect commercial, diplomatic, and navy messages from the early to mid-twentieth century. ",
+          src: "https://miro.medium.com/max/1400/1*9UkMzMs400d9n6WJuTaBCA.jpeg",
+          more: "https://medium.com/@arshadpatel2001/the-philosophy-of-enigma-machine-9d8f9820080b",
         },
         {
           id: 2,
-          title: "Creating an AR filter with Spark AR",
-          date: "20th March 2020",
+          title: "Linux Basics",
+          date: "24th May 2022",
           description:
-            "Spark AR Studio is an augmented reality platform for Mac & Windows that allows you to somewhat easily create.",
-          src: Img2,
-          more: "",
+            "Linux is an open-source operating system (OS). An operating system is the software that directly manages a system’s hardware and resources, like CPU, memory, and storage.",
+          src: "https://miro.medium.com/max/1400/1*jlcJRrHqaH-PaIhljYZo9w.png",
+          more: "https://medium.com/@atharva.deore20/linux-basics-743ca439b6cc",
         },
 
         {
           id: 3,
-          title: "Develope and deploy an android library",
-          date: "20th March 2020",
+          title: "How do stay secure from cyber-attacks?",
+          date: "24th May 2022",
           description:
-            "Many times we've produced native Android apps with Kotlin and Java support, but it's always been a lasan.",
-          src: Img3,
-          more: "robodroid",
+            "Our world is increasingly digital and increasingly interconnected. So, while we must protect ourselves, it’s going to take all of us to really protect the systems we all rely on. ",
+          src: "https://miro.medium.com/max/1400/1*a-gKjaRiGC59c6AlMQd39g.jpeg",
+          more: "https://medium.com/@bhaktikarangale3140/how-do-stay-secure-from-cyber-attacks-41ecd56da280",
         },
         {
           id: 4,
-          title: "GAN’s A Picture into the Future",
-          date: "20th March 2020",
+          title: "Website Hacking — Information Gathering, File Upload, Code Execution, File Inclusion",
+          date: "24th May 2022",
           description:
-            "GANs have a wide range of applications, from the film industry to cybersecurity. Have you ever wondered?",
-          src: Img1,
-          more: "",
+            "Information gathering about the target is the most important thing in ethical hacking. A website consists of various attributes like IP address, technology used , programming languages used etc.",
+          src: "https://miro.medium.com/max/1400/1*Wt7xLeKN8kQvQEIFYEUbcQ.png",
+          more: "https://medium.com/@chaitanya.landge20/website-hacking-information-gathering-file-upload-code-execution-file-inclusion-2c5aa40c0d90",
         },
         {
           id: 5,
-          title: "Creating an AR filter with Spark AR",
-          date: "20th March 2020",
+          title: "Website Hacking — XSS (Cross Side Scripting)",
+          date: "24th May 2022",
           description:
-            "Spark AR Studio is an augmented reality platform for Mac & Windows that allows you to somewhat easily create.",
-          src: Img2,
-          more: "",
+            "XSS is short for Cross Site Scripting. This type of vulnerability allows an attacker to inject JavaScript into a page. ",
+          src: "https://miro.medium.com/max/1400/1*jBP_KyO69jeu8fgnTuffWQ.png",
+          more: "https://medium.com/@chaitanya.landge20/website-hacking-xss-cross-side-scripting-bcfda9cea60d",
         },
 
         {
           id: 6,
-          title: "Develope and deploy an android library",
-          date: "20th March 2020",
+          title: "Website Hacking — Final Part",
+          date: "24th May 2022",
           description:
-            "Many times we've produced native Android apps with Kotlin and Java support, but it's always been a lasan.",
-          src: Img3,
-          more: "robodroid",
+            "It is very important to understand that achieving 100 percent security is impossible. All we are trying to do is to improve the security of our applications and make sure that they are as secure as possible.",
+          src: "https://miro.medium.com/max/1400/1*HZAdLiqBv3-npGDph93hcQ.png",
+          more: "https://medium.com/@chaitanya.landge20/website-hacking-final-part-2e41ba9447d5",
         },
       ],
     };
@@ -78,8 +78,8 @@ export default class Blog extends Component {
   sliders() {
     return this.state.sliders.map((blog_card) => {
       return (
-        <div className="blog_card_container">
-          <div key={blog_card.id} className="blog_card" id="blogs-slider-id">
+        <div key={blog_card.id} className="blog_card_container">
+          <div className="blog_card" id="blogs-slider-id">
             <img
               src={blog_card.src}
               alt={blog_card.title}
@@ -93,7 +93,7 @@ export default class Blog extends Component {
             0{blog_card.id}
           </h1> */}
             <h6 className="blog_No">{blog_card.date}</h6>
-            <div className="text-info">
+            <div className="blog-text-info">
               <div className="blog_card-header">
                 <h2 style={{ backgroundColor: "white", fontWeight: "600" }}>
                   {blog_card.title}
@@ -103,12 +103,25 @@ export default class Blog extends Component {
                 className="blog_card-description"
                 style={{
                   backgroundColor: "white",
-                  color: "black",
-                  opacity: "60%",
+                  color: "rgba(0,0,0,0.6)",
+                  
                 }}
               >
                 {blog_card.description}
+                <a href={blog_card.more} style={{ textDecorationColor:"#559083"}} target="__blank">
+                  <p                    
+                    style={{
+                      backgroundColor: "transparent",
+                      color: "#559083",                     
+                    }}
+                  >
+                    Read more
+                  </p>
+                </a>
               </p>
+              {/* <a href={blog_card.more}>
+                <p>Read more</p>
+              </a> */}
             </div>
             {/* <Link to={`/blogs/${blog_card.more}`} key={blog_card.id}>
             <button>

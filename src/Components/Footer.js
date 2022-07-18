@@ -1,5 +1,11 @@
 import React from 'react'
 import '../styles/Footer.css'
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
 function Footer() {
   return (
       <div>
@@ -32,26 +38,31 @@ function Footer() {
               className="socialmedialinks
              linksgrp1"
             >
-              <a className="alink" href="https://www.twitter.com/">
-                Twitter
+                <a className="alink" href="https://www.twitter.com/">
+                  <TwitterIcon className="footer-icons" style={{fontSize:"large"}}/>
+                  <span className="socialmedia-names">Twitter</span>
               </a>
               <span className="alinkspace"> </span>
-              <a className="alink" href="https://www.youtube.com/">
-                Youtube
+                <a className="alink" href="https://www.youtube.com/">
+                  <YouTubeIcon className="footer-icons" style={{fontSize:"large"}}/>
+                <span className="socialmedia-names">Youtube</span>
               </a>
             </p>
             <p className="socialmedialinks linksgrp2">
-              <a className="alink" href="https://www.instagram.com/vitpunerobotics/?hl=en/">
-                Intagram
+                <a className="alink" href="https://www.instagram.com/vitpunerobotics/?hl=en/">
+                  <InstagramIcon className="footer-icons" style={{fontSize:"large"}}/>
+                  <span className="socialmedia-names">Instagram</span>
               </a>
               <span className="alinkspace"> </span>
-              <a className="alink" href="https://www.linkedin.com/company/the-robotics-forum/?originalSubdomain=in">
-                Linkedin
+                <a className="alink" href="https://www.linkedin.com/company/the-robotics-forum/?originalSubdomain=in">
+                  <LinkedInIcon className="footer-icons" style={{fontSize:"large"}}/>
+                  <span className="socialmedia-names">LinkedIn</span>
               </a>
               <span className="alinkspace"> </span>
               <a className="alink" id="facebooklink" href="https://www.facebook.com/trfvit/"
-              >
-                Facebook
+                >
+                  <FacebookIcon className="footer-icons" style={{fontSize:"large"}}/>
+                  <span className="socialmedia-names">Facebook</span>
               </a>
             </p>
           </div>

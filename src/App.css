@@ -21,3 +21,22 @@
 .font-face-gm {
   font-family: "Joyride";
  }
+
+ .back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height:50px;
+  width:50px;
+  font-size: 40px;
+  background: #539093;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+}
+
+.back-to-top:hover {
+  filter: sepia(100%) grayscale(100%);  
+}
+
