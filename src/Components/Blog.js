@@ -112,7 +112,8 @@ export default class Blog extends Component {
                   <p                    
                     style={{
                       backgroundColor: "transparent",
-                      color: "#559083",                     
+                      color: "#559083", 
+                      fontWeight:"bolder"
                     }}
                   >
                     Read more
