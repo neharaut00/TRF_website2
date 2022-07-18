@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./Components/NavBar.js";
 import Footer from "./Components/Footer.js";
 import HomePage from "./Components/HomePage.js";
@@ -48,7 +48,7 @@ const App = () => {
   };
   return (
     <div style={{ margin: "0px", padding: "0px", backgroundColor: "#03090C" }}>
-      <BrowserRouter>
+      <HashRouter>
         <ScrollToTop />
         <NavBar />
         <Routes>
@@ -67,7 +67,7 @@ const App = () => {
           <Route path="/workshops/level2" element={<HomePage />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
       {showButton && (
         <button onClick={scrollToTop} className="back-to-top">        
           &#8963;
