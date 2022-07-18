@@ -222,7 +222,7 @@ export default class Workshop extends Component {
           })} */}
           {this.sliders()}
         </Slider>
-        {/* <p
+        <p
           className="drag-text"
           style={{
             fontSize: "1em",
@@ -232,8 +232,8 @@ export default class Workshop extends Component {
           }}
         >
           {" "}
-          Drag to see more
-        </p> */}
+          
+        </p>
       </div>
     );
   }

@@ -2,6 +2,14 @@ import React from "react";
 import { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import "../styles/Recruitment.css";
+// var email_error = document.getElementById("input-email");
+//   email_error.oninvalid = function (e) { e.target.setCustomValidity("Please enter the valid college email id"); };
+//   var mobile_error = document.getElementById("input-mobile");
+//   mobile_error.oninvalid = function (e) { e.target.setCustomValidity("Please enter valid 10 digit mobile no."); };
+//   var pr_error = document.getElementById("input-prn");
+//   pr_error.oninvalid = function (e) { e.target.setCustomValidity("Please enter valid 8 digit PR number"); };
+//   var rollno_error = document.getElementById("input-rollno");
+//   rollno_error.oninvalid = function (e) { e.target.setCustomValidity("Please enter valid 2 or 3 digit roll number"); };
 
 function Recruitment() {
   const [form, setForm] = useState({
@@ -38,15 +46,51 @@ function Recruitment() {
     }
     setForm({ ...form, [name]: value });
   };
+
+  
   const SendData = async (e) => {
     e.preventDefault();
-    const { name, email, phone, year, prn, branch, division, rollno, ele, mech, prog, admin, whytrf, technicalskills, experience } = form;
-    const res = await fetch("https://trfrecruitment2022backend.herokuapp.com/savedata", {
-      method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name, email, phone, year, prn, branch, division, rollno, ele, mech, prog, admin, whytrf, technicalskills, experience
-      })
-    });
+    const {
+      name,
+      email,
+      phone,
+      year,
+      prn,
+      branch,
+      division,
+      rollno,
+      ele,
+      mech,
+      prog,
+      admin,
+      whytrf,
+      technicalskills,
+      experience,
+    } = form;
+    const res = await fetch(
+      "https://trfrecruitment2022backend.herokuapp.com/savedata",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          year,
+          prn,
+          branch,
+          division,
+          rollno,
+          ele,
+          mech,
+          prog,
+          admin,
+          whytrf,
+          technicalskills,
+          experience,
+        }),
+      }
+    );
     const data = await res.json();
     if (!data) {
       window.alert("Form submission failed");
@@ -55,7 +99,7 @@ function Recruitment() {
       window.alert("Form filled");
       // console.log("Form filled");
     }
-  }
+  };
   return (
     <div className="recruitment-main-div">
       <Row className="recruitment-row">
@@ -64,7 +108,12 @@ function Recruitment() {
           Excited to get into The Robotics Forum? Here's your chance to venture
           into the technical and administrative domains of TRF!
         </p>
-        <Col className="recruitment-info" sm={6} data-aos="fade-right" data-aos-once="true">
+        <Col
+          className="recruitment-info"
+          sm={6}
+          data-aos="fade-right"
+          data-aos-once="true"
+        >
           <div>
             <p>
               Students from all branches can apply in multiple domains. Here's
@@ -92,22 +141,27 @@ function Recruitment() {
             </p>
           </div>
         </Col>
-        <Col className="recruitment-form-col" sm={6} data-aos="fade-left" data-aos-once="true">
-          <form
-            className="recruitment-form"
-            onSubmit={SendData}
-          >
+        <Col
+          className="recruitment-form-col"
+          sm={6}
+          data-aos="fade-left"
+          data-aos-once="true"
+        >
+          <form className="recruitment-form" onSubmit={SendData}>
             <label className="input-field">Full Name(Name Surname) :</label>
             <br />
-            <input type="text" name="name" onChange={Input} required />
+            <input type="text" name="name" onChange={Input}  required />
             <br />
             <label className="input-field">Email id(vit.edu) :</label>
             <br />
             <input
               type="email"
+              id="input-email"
               name="email"
               onChange={Input}
               pattern="[a-z0-9._%+-]+@vit.edu"
+              onInvalid="alert('You must fill out the form!');"
+              errorMessage="Please enter a valid college email id"
               title="vit.edu email id only"
               required
             />
@@ -116,9 +170,11 @@ function Recruitment() {
             <br />
             <input
               type="text"
+              id="input-mobile"
               name="phone"
               onChange={Input}
               pattern="[0-9]{10}"
+              errorMessage="Please enter a valid 10 digit mobile number"
               title="10 digit valid phone no."
               required
             />
@@ -135,9 +191,11 @@ function Recruitment() {
             <br />
             <input
               type="text"
+              id="input-prn"
               name="prn"
               onChange={Input}
               pattern="[0-9]{8}"
+              errorMessage="Please enter a valid 8 digit PR number"
               title="Valid prn"
               required
             />
@@ -204,9 +262,11 @@ function Recruitment() {
             <br />
             <input
               type="text"
+              id="input-rollno"
               name="rollno"
               onChange={Input}
               pattern="[0-9]{2,3}"
+              errorMessage="Please enter a valid 2 or 3 roll number"
               title="valid roll no."
               required
             />
