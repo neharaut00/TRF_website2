@@ -45,8 +45,8 @@ svg.Subscribebutton-neha {
         font-size: 2em;    
       }
       .Newsletter-maindiv{
-
-        margin: 10em 4em 2em 4em;
+        margin: 6em 4em 2em 4em;
+        padding-top:4em;
     }
       svg.Subscribebutton-neha {
         width: 140px;
@@ -60,7 +60,8 @@ svg.Subscribebutton-neha {
       }
       .Newsletter-maindiv{
         text-align: center;
-        margin: 10em 3em 2em 3em;
+        margin: 6em 3em 2em 3em;
+        padding-top:4em;
     }
 
     .subscribe-email{
@@ -74,6 +75,7 @@ svg.Subscribebutton-neha {
       }
       .Newsletter-maindiv{
         text-align: center;
-        margin: 10em 2em 2em 2em;
+        margin: 6em 2em 2em 2em;
+        padding-top:4em;
     }
   }
