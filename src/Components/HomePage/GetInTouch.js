@@ -1,12 +1,55 @@
 import React from "react";
+import {useState} from "react"
 import "./GetInTouch.css";
 import { Row, Col } from "react-bootstrap";
 
 function GetInTouch() {
+  const [form, setForm] = useState({
+    email: "",
+    message: "",
+  });
+
+  let name, value;
+  const Input = (e) => {
+    // console.log(e);
+    name = e.target.name;
+    value = e.target.value;
+    setForm({ ...form, [name]: value });
+  };
+
+  const SendData = async (e) => {
+    e.preventDefault();
+    const { email, message } = form;
+    const res = await fetch(
+      "https://trfbackend.herokuapp.com/contact-us",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({          
+          email,          
+          message
+        }),
+      }
+    );
+    const data = await res.json();
+    if (!data) {
+      window.alert("Form submission failed");
+      // console.log("Form submission failed");
+    } else {
+      window.alert("Form filled");
+      // console.log("Form filled");
+    }
+  };
+
   return (
     <div id="ContactUs-id" className="contactUs">
       <Row className="contactUs-row">
-        <Col className="image-col" xs={4} data-aos="fade-right" data-aos-once="true">
+        <Col
+          className="image-col"
+          xs={4}
+          data-aos="fade-right"
+          data-aos-once="true"
+        >
           <div>
             <svg
               className="getintouch"
@@ -73,16 +116,16 @@ function GetInTouch() {
             <h1 className="heading">have an iDea?</h1>
             <p className="subheading">Tell us about it</p>
           </div>
-          <form className="form">
+          <form className="form" onSubmit={SendData}>
             <label className="input-field">
               {" "}
               Email
-              <input type="email" />
+              <input type="email" name="email" onChange={Input} />
             </label>
             <label className="input-field">
               {" "}
               Message
-              <textarea />
+              <textarea name="message" onChange={Input} />
             </label>
             <div className="contactUs-button">
               <label>
